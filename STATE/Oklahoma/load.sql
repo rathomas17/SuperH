@@ -7,7 +7,7 @@ EPAreviewStart varchar(20),
 EPAreviewEnd varchar(20),
 60DayPetitionStart varchar(20),
 60DayPetitionEnd varchar(20),
-Comment varbinary(200)
+Comment varbinary(1000)
 );
 
 LOAD DATA LOCAL INFILE '~/Desktop/SuperH/STATE/Oklahoma/Oklahoma.csv'

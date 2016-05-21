@@ -10,7 +10,7 @@ EPAreviewEnd varchar(20),
 Comment varbinary(200)
 );
 
-LOAD DATA LOCAL INFILE '~/Desktop/SuperH/STATE/Texas/Texas.csv'
+LOAD DATA INFILE '~/Desktop/SuperH/STATE/Texas/Texas.csv'
 INTO TABLE Texas
 FIELDS TERMINATED BY ','
 ENCLOSED BY '"'
