@@ -7,7 +7,7 @@ EPAreviewStart varchar(20),
 EPAreviewEnd varchar(20),
 60DayPetitionStart varchar(20),
 60DayPetitionEnd varchar(20),
-Comment varchar(100)
+Comment varbinary(200)
 );
 
 LOAD DATA LOCAL INFILE '~/Desktop/SuperH/STATE/Texas/Texas.csv'
