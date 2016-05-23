@@ -1,5 +1,5 @@
 ﻿
-var columnNames = ["Patent Classification", "Sum", "Per Capita"]
+var columnNames = ["Permit Classification", "Sum", "Per Capita"]
 
 function setUpTable(patentJSON){
 	var chart = document.getElementById("chart");
@@ -37,8 +37,8 @@ function drawTable(data, tableid, dimensions, columns) {
         .data(columnNames)
         .enter()
         .append("th")
-            .text(function(column) { return column; });	
-	
+            .text(function(column) { return column; });
+
 	// Create a row for each object in the data and perform an intial sort.
 	var rows = tbody.selectAll("tr")
 		.data(data).enter()
@@ -48,10 +48,10 @@ function drawTable(data, tableid, dimensions, columns) {
 		});
 
 	// Create a cell in each row for each column
-	var cells = rows.selectAll("td")		
+	var cells = rows.selectAll("td")
 		.attr("id", function(d, i){
 			return i;
-		})	
+		})
 		.data(function (d) {
 			return columns.map(function (column) {
 				return { column: column, data: d};
@@ -90,7 +90,7 @@ function tableElement(d){
 var oldRow = "nothing";
 function highlightRow(row){
 	$('.' + oldRow).css('background-color', '');
-	oldRow = row.replace(/ /g, '');	
+	oldRow = row.replace(/ /g, '');
 	console.log("highlight row called " + oldRow);
 	highlight();
 }
