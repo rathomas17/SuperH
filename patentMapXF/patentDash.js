@@ -30,7 +30,7 @@ for (year=minYear; year<maxYear; year++){
 	data['G'][year] = new Array();
 	data['H'][year] = new Array();
 	data['Y'][year] = new Array();
-}	
+}
 //data['A'] = new Array();
 //data['B'] = new Array();
 //data['C'] = new Array();
@@ -58,7 +58,7 @@ function resize(){
 		xWidth = Math.max((xWidth - 50)/2 - 20, 400);
 	}
 	else {
-		xWidth = xWidth - 60;	
+		xWidth = xWidth - 60;
 		xWidth = Math.max(xWidth, 400);
 	}
 	scale = xWidth/960;
@@ -81,7 +81,7 @@ function setup() {
 	    console.log("patentSummeries in wrapper ");
 	    console.log(patentSummeries);
 		setUpTable(patentSummeries);
-		
+
 		var urlpatent = window.location.search.replace('?','').replace('/','').replace(/%20/g, ' ');
 		console.log(urlpatent);
 		if (patentSummeries[urlpatent]){
@@ -126,7 +126,7 @@ function setup() {
 
 }
 
-function drawPatent(patent){	
+function drawPatent(patent){
 	console.log("patent " + patent);
 	currentCPC = patent;
 	currentCPC = currentCPC.replace("cpc_","");
@@ -140,7 +140,7 @@ function drawPatent(patent){
 //	});
 //	d3.json("data/cpc_C_year_fips.json", function(json) {
 //    d3.json("data/"+patent+"_year_fips.csv", function(json,error) {
- 
+
 	//for (var key in data){
 	//    if (data.hasOwnProperty(key)) {
 		//console.log("key " + key + " data[key] " + data[key]);

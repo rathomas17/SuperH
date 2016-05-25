@@ -18,8 +18,14 @@ con = mdb.connect(read_default_file=u'./genUser.cnf', db=u'State_Permits', chars
 cur_fetch = con.cursor(mdb.cursors.DictCursor)
 
 sel = u'''select FacilityName,County from Ohio'''
+
+sel2 = u'''select fips from Counties'''
+
 print sel
+
+
 cur_fetch.execute(sel)
+
 print "Rows returned: ",cur_fetch.rowcount
 numWrites = 0
 #for i in range(cur_fetch.rowcount):
@@ -28,4 +34,16 @@ rows = cur_fetch.fetchall()
 for row in rows:
    FacilityName = row['FacilityName']
    County = row['County']
-   print 'Row data: FacilityName ',FacilityName,'; County ',County
+
+   print sel2
+   cur_fetch.execute(sel2)
+   rows = cur_fetch.fetchall()
+   name = row['name']
+
+
+
+   if FacilityName == name:
+
+       print 'Row data: FacilityName ',FacilityName,'; County ',County
+
+       print 'Row data: Fips ID ',fips
