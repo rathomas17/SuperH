@@ -12,38 +12,55 @@ sys.setdefaultencoding('utf8')
 #
 # Connect to DB
 con = mdb.connect(read_default_file=u'./genUser.cnf', db=u'State_Permits', charset=u'utf8')
-
+con2 = mdb.connect(read_default_file=u'./genUser.cnf', db=u'State_Permits', charset=u'utf8')
 #
 # grab a "cursor"
 cur_fetch = con.cursor(mdb.cursors.DictCursor)
+cur_fetch2 = con2.cursor(mdb.cursors.DictCursor)
 
 sel = u'''select FacilityName,County from Ohio'''
+sel2 = u'''select name,fips from Counties'''
 
-sel2 = u'''select fips from Counties'''
+f = open('myfile.txt','w')
+
 
 print sel
 
 
 cur_fetch.execute(sel)
-
+cur_fetch2.execute(sel2)
 print "Rows returned: ",cur_fetch.rowcount
 numWrites = 0
-#for i in range(cur_fetch.rowcount):
-#   row = cur_fetch.fetchone()
+i = 0
+
 rows = cur_fetch.fetchall()
-for row in rows:
-   FacilityName = row['FacilityName']
-   County = row['County']
+fipsrows = cur_fetch2.fetchall()
+if i < 10:
+    
+    for row in rows:
+       FacilityName = row['FacilityName']
+       County = row['County']
 
-   print sel2
-   cur_fetch.execute(sel2)
-   rows = cur_fetch.fetchall()
-   name = row['name']
+       #print 'Row data: FacilityName ',FacilityName,'; County ',County
 
 
 
-   if FacilityName == name:
+       print i
+       i = i + 1
+       for row2 in fipsrows:
 
-       print 'Row data: FacilityName ',FacilityName,'; County ',County
+           fips = row2['fips']
+           name = row2['name']
 
-       print 'Row data: Fips ID ',fips
+
+
+
+           if i < 10 and County == name:
+                print fips, i
+
+                #{"cpc":"A", "fips":"39001", "sum":100, "normalized":100, "year":2015}
+
+                f = open('myfile.txt','a')
+                f.write('"lol"')
+                f.write("\n")
+                f.close()

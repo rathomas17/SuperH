@@ -97,7 +97,7 @@ function setup() {
 		$('#left').height($('#right').height());
 	});
 
-    d3.json("data/cpc_xf.json", function(json,error) {
+    d3.json("data/cpc_ohio.json", function(json,error) {
 //	data = json;
         cpcData = json.cpcData;
         cpcData.forEach(function(p){

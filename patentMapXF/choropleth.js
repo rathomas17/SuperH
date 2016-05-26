@@ -13,8 +13,8 @@ function drawMap() {
 	var svg = d3.select("#choroplethGraph")
 		.append("svg")
 		.attr("id", "chosvg")
-		.attr("height", xHeight)      
-//		.attr("height", 500)      
+		.attr("height", xHeight)
+//		.attr("height", 500)
 		.attr("viewBox", "0 0 960 500")
 	    .attr("width", xWidth)
 //	    .attr("width", 900)
@@ -41,9 +41,9 @@ function drawMap() {
 				    //			 		tooltip.text(d.properties.name + " County: " + data[d.id]['sum'] + " Signers");
 				    //console.log(" Countyxxx: " + data[currentCPC][d.id]['normalized'] + " Patents");
 				    //val = 0;
-				    // vvfif (d.id in data[currentCPC]) 
+				    // vvfif (d.id in data[currentCPC])
 				    val = data[currentCPC][currentYear][d.id]['normalized'];
-			 		tooltip.text(d.properties.name + " County: " + val + " Patents");
+			 		tooltip.text(d.properties.name + " County: " + val + " Permits");
 			 		d3.select(this).style('stroke-width','4px');
 			 		d3.select(this).style('stroke','red');
 			 		tooltip.style("visibility", "visible");
