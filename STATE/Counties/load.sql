@@ -1,18 +1,17 @@
-DROP TABLE IF EXISTS Counties;
+DROP TABLE IF EXISTS texas_counties;
 
-CREATE TABLE Counties (
-  Type varchar(10),
-  fips varchar(5),
-  name varchar(40)
+CREATE TABLE texas_counties (
+  fips varchar(20),
+  count varchar(20)
 
 
 
 );
 
 
-LOAD DATA INFILE '~/Desktop/SuperH/STATE/Counties/Counties.csv'
-INTO TABLE Counties
+LOAD DATA INFILE '~/Desktop/SuperH/STATE/Counties/texas_counties.csv'
+INTO TABLE texas_counties
 FIELDS TERMINATED BY ','
 ENCLOSED BY '"'
 LINES TERMINATED BY '\r'
-IGNORE 1 ROWS;
+IGNORE 0 ROWS;
