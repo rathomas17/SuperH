@@ -413,5 +413,120 @@
 ,{"cpc":"A", "fips":"48507", "sum":100, "normalized":1, "year":2015}
 
 
+
+,{"cpc":"A", "fips":"35001", "sum":300, "normalized":3, "year":2015}
+,{"cpc":"A", "fips":"35003", "sum":0, "normalized":0, "year":2015}
+,{"cpc":"A", "fips":"35005", "sum":400, "normalized":4, "year":2015}
+,{"cpc":"A", "fips":"35007", "sum":0, "normalized":0, "year":2015}
+,{"cpc":"A", "fips":"35009", "sum":500, "normalized":5, "year":2015}
+,{"cpc":"A", "fips":"35011", "sum":100, "normalized":1, "year":2015}
+,{"cpc":"A", "fips":"35013", "sum":0, "normalized":0, "year":2015}
+,{"cpc":"A", "fips":"35015", "sum":200, "normalized":2, "year":2015}
+,{"cpc":"A", "fips":"35017", "sum":500, "normalized":5, "year":2015}
+,{"cpc":"A", "fips":"35019", "sum":300, "normalized":3, "year":2015}
+,{"cpc":"A", "fips":"35021", "sum":0, "normalized":0, "year":2015}
+,{"cpc":"A", "fips":"35023", "sum":400, "normalized":4, "year":2015}
+,{"cpc":"A", "fips":"35025", "sum":0, "normalized":0, "year":2015}
+,{"cpc":"A", "fips":"35027", "sum":100, "normalized":1, "year":2015}
+,{"cpc":"A", "fips":"35029", "sum":600, "normalized":6, "year":2015}
+,{"cpc":"A", "fips":"35031", "sum":0, "normalized":0, "year":2015}
+,{"cpc":"A", "fips":"35033", "sum":100, "normalized":1, "year":2015}
+,{"cpc":"A", "fips":"35035", "sum":600, "normalized":6, "year":2015}
+,{"cpc":"A", "fips":"35037", "sum":100, "normalized":1, "year":2015}
+,{"cpc":"A", "fips":"35039", "sum":0, "normalized":0, "year":2015}
+,{"cpc":"A", "fips":"35041", "sum":100, "normalized":1, "year":2015}
+,{"cpc":"A", "fips":"35043", "sum":0, "normalized":0, "year":2015}
+,{"cpc":"A", "fips":"35045", "sum":100, "normalized":1, "year":2015}
+,{"cpc":"A", "fips":"35047", "sum":0, "normalized":0, "year":2015}
+,{"cpc":"A", "fips":"35049", "sum":100, "normalized":1, "year":2015}
+,{"cpc":"A", "fips":"35051", "sum":100, "normalized":1, "year":2015}
+,{"cpc":"A", "fips":"35053", "sum":0, "normalized":0, "year":2015}
+,{"cpc":"A", "fips":"35055", "sum":100, "normalized":1, "year":2015}
+,{"cpc":"A", "fips":"35057", "sum":300, "normalized":3, "year":2015}
+,{"cpc":"A", "fips":"35059", "sum":0, "normalized":0, "year":2015}
+,{"cpc":"A", "fips":"35061", "sum":400, "normalized":4, "year":2015}
+
+
+
+,{"cpc":"A", "fips":"40001", "sum":1500, "normalized":15, "year":2015}
+,{"cpc":"A", "fips":"40003", "sum":500, "normalized":5, "year":2015}
+,{"cpc":"A", "fips":"40005", "sum":100, "normalized":1, "year":2015}
+,{"cpc":"A", "fips":"40007", "sum":800, "normalized":8, "year":2015}
+,{"cpc":"A", "fips":"40009", "sum":400, "normalized":4, "year":2015}
+,{"cpc":"A", "fips":"40011", "sum":100, "normalized":1, "year":2015}
+,{"cpc":"A", "fips":"40013", "sum":100, "normalized":1, "year":2015}
+,{"cpc":"A", "fips":"40015", "sum":1200, "normalized":12, "year":2015}
+,{"cpc":"A", "fips":"40017", "sum":100, "normalized":1, "year":2015}
+,{"cpc":"A", "fips":"40019", "sum":600, "normalized":6, "year":2015}
+,{"cpc":"A", "fips":"40021", "sum":800, "normalized":8, "year":2015}
+,{"cpc":"A", "fips":"40023", "sum":100, "normalized":1, "year":2015}
+,{"cpc":"A", "fips":"40025", "sum":100, "normalized":1, "year":2015}
+,{"cpc":"A", "fips":"40027", "sum":700, "normalized":7, "year":2015}
+,{"cpc":"A", "fips":"40029", "sum":100, "normalized":1, "year":2015}
+,{"cpc":"A", "fips":"40031", "sum":100, "normalized":1, "year":2015}
+,{"cpc":"A", "fips":"40033", "sum":600, "normalized":6, "year":2015}
+,{"cpc":"A", "fips":"40035", "sum":100, "normalized":1, "year":2015}
+,{"cpc":"A", "fips":"40037", "sum":100, "normalized":1, "year":2015}
+,{"cpc":"A", "fips":"40039", "sum":400, "normalized":4, "year":2015}
+,{"cpc":"A", "fips":"40041", "sum":100, "normalized":1, "year":2015}
+,{"cpc":"A", "fips":"40043", "sum":100, "normalized":1, "year":2015}
+,{"cpc":"A", "fips":"40045", "sum":100, "normalized":1, "year":2015}
+,{"cpc":"A", "fips":"40047", "sum":100, "normalized":1, "year":2015}
+,{"cpc":"A", "fips":"40049", "sum":100, "normalized":1, "year":2015}
+,{"cpc":"A", "fips":"40051", "sum":0, "normalized":0, "year":2015}
+,{"cpc":"A", "fips":"40053", "sum":100, "normalized":1, "year":2015}
+,{"cpc":"A", "fips":"40055", "sum":100, "normalized":1, "year":2015}
+,{"cpc":"A", "fips":"40057", "sum":400, "normalized":4, "year":2015}
+,{"cpc":"A", "fips":"40059", "sum":0, "normalized":0, "year":2015}
+,{"cpc":"A", "fips":"40061", "sum":100, "normalized":1, "year":2015}
+,{"cpc":"A", "fips":"40063", "sum":100, "normalized":1, "year":2015}
+,{"cpc":"A", "fips":"40065", "sum":400, "normalized":4, "year":2015}
+,{"cpc":"A", "fips":"40067", "sum":400, "normalized":4, "year":2015}
+,{"cpc":"A", "fips":"40069", "sum":0, "normalized":0, "year":2015}
+,{"cpc":"A", "fips":"40071", "sum":100, "normalized":1, "year":2015}
+,{"cpc":"A", "fips":"40073", "sum":900, "normalized":9, "year":2015}
+,{"cpc":"A", "fips":"40075", "sum":300, "normalized":3, "year":2015}
+,{"cpc":"A", "fips":"40077", "sum":100, "normalized":1, "year":2015}
+,{"cpc":"A", "fips":"40079", "sum":100, "normalized":1, "year":2015}
+,{"cpc":"A", "fips":"40081", "sum":0, "normalized":0, "year":2015}
+,{"cpc":"A", "fips":"40083", "sum":0, "normalized":0, "year":2015}
+,{"cpc":"A", "fips":"40085", "sum":100, "normalized":1, "year":2015}
+,{"cpc":"A", "fips":"40087", "sum":0, "normalized":0, "year":2015}
+,{"cpc":"A", "fips":"40089", "sum":100, "normalized":1, "year":2015}
+,{"cpc":"A", "fips":"40091", "sum":600, "normalized":6, "year":2015}
+,{"cpc":"A", "fips":"40093", "sum":100, "normalized":1, "year":2015}
+,{"cpc":"A", "fips":"40095", "sum":900, "normalized":9, "year":2015}
+,{"cpc":"A", "fips":"40097", "sum":1400, "normalized":14, "year":2015}
+,{"cpc":"A", "fips":"40099", "sum":100, "normalized":1, "year":2015}
+,{"cpc":"A", "fips":"40101", "sum":0, "normalized":0, "year":2015}
+,{"cpc":"A", "fips":"40103", "sum":200, "normalized":2, "year":2015}
+,{"cpc":"A", "fips":"40105", "sum":800, "normalized":8, "year":2015}
+,{"cpc":"A", "fips":"40107", "sum":100, "normalized":1, "year":2015}
+,{"cpc":"A", "fips":"40109", "sum":600, "normalized":6, "year":2015}
+,{"cpc":"A", "fips":"40111", "sum":100, "normalized":1, "year":2015}
+,{"cpc":"A", "fips":"40113", "sum":100, "normalized":1, "year":2015}
+,{"cpc":"A", "fips":"40115", "sum":400, "normalized":4, "year":2015}
+,{"cpc":"A", "fips":"40117", "sum":100, "normalized":1, "year":2015}
+,{"cpc":"A", "fips":"40119", "sum":2300, "normalized":23, "year":2015}
+,{"cpc":"A", "fips":"40121", "sum":600, "normalized":6, "year":2015}
+,{"cpc":"A", "fips":"40123", "sum":100, "normalized":1, "year":2015}
+,{"cpc":"A", "fips":"40125", "sum":100, "normalized":1, "year":2015}
+,{"cpc":"A", "fips":"40127", "sum":100, "normalized":1, "year":2015}
+,{"cpc":"A", "fips":"40129", "sum":0, "normalized":0, "year":2015}
+,{"cpc":"A", "fips":"40131", "sum":0, "normalized":0, "year":2015}
+,{"cpc":"A", "fips":"40133", "sum":2300, "normalized":23, "year":2015}
+,{"cpc":"A", "fips":"40135", "sum":0, "normalized":0, "year":2015}
+,{"cpc":"A", "fips":"40137", "sum":400, "normalized":4, "year":2015}
+,{"cpc":"A", "fips":"40139", "sum":500, "normalized":5, "year":2015}
+,{"cpc":"A", "fips":"40141", "sum":0, "normalized":0, "year":2015}
+,{"cpc":"A", "fips":"40143", "sum":700, "normalized":7, "year":2015}
+,{"cpc":"A", "fips":"40145", "sum":1100, "normalized":11, "year":2015}
+,{"cpc":"A", "fips":"40147", "sum":500, "normalized":5, "year":2015}
+,{"cpc":"A", "fips":"40149", "sum":600, "normalized":6, "year":2015}
+,{"cpc":"A", "fips":"40151", "sum":700, "normalized":7, "year":2015}
+,{"cpc":"A", "fips":"40153", "sum":2500, "normalized":25, "year":2015}
+
+
+
 ]
 }
