@@ -18,7 +18,7 @@ con = mdb.connect(read_default_file=u'./genUser.cnf', db=u'State_Permits', chars
 cur_fetch = con.cursor(mdb.cursors.DictCursor)
 
 
-sel = u'''select fips, count from oklahoma_counties'''
+sel = u'''select fips, count from mississippi_counties'''
 
 
 

@@ -1,0 +1,18 @@
+{
+"cpcData":[
+  {"cpc":"A", "fips":"4001", "sum":0, "normalized":0, "year":2015}
+  ,{"cpc":"A", "fips":"4003", "sum":0, "normalized":0, "year":2015}
+  ,{"cpc":"A", "fips":"4005", "sum":0, "normalized":0, "year":2015}
+  ,{"cpc":"A", "fips":"4007", "sum":0, "normalized":0, "year":2015}
+  ,{"cpc":"A", "fips":"4009", "sum":0, "normalized":0, "year":2015}
+  ,{"cpc":"A", "fips":"4011", "sum":0, "normalized":0, "year":2015}
+  ,{"cpc":"A", "fips":"4013", "sum":4000, "normalized":4, "year":2015}
+  ,{"cpc":"A", "fips":"4015", "sum":100, "normalized":1, "year":2015}
+  ,{"cpc":"A", "fips":"4017", "sum":0, "normalized":0, "year":2015}
+  ,{"cpc":"A", "fips":"4019", "sum":100, "normalized":1, "year":2015}
+  ,{"cpc":"A", "fips":"4021", "sum":0, "normalized":0, "year":2015}
+  ,{"cpc":"A", "fips":"4023", "sum":0, "normalized":0, "year":2015}
+  ,{"cpc":"A", "fips":"4025", "sum":0, "normalized":0, "year":2015}
+  ,{"cpc":"A", "fips":"4027", "sum":0, "normalized":0, "year":2015}
+]
+}
