@@ -6,7 +6,7 @@ var minYear = 2005;
 var maxYear = 2016;
 var currentCPC = 'A';
 var currentYear = 2015;
-var patentSummeries
+var patentSummeries;
 //var data=new Array(new Array());
 //var data=[];
 var data = new Array();
@@ -47,7 +47,6 @@ function resize(){
 	xHeightLineGraph = 500*scale;
 	console.log("resize xWidthLineGraph "+xWidthLineGraph+"; wHeight "+xHeightLineGraph);
 
-
 	xWidth = document.getElementById("graphs").offsetWidth;
 	wHeight = $(window).height();
 	console.log("window width " + xWidth);
@@ -63,7 +62,7 @@ function resize(){
 	}
 	scale = xWidth/960;
 	xHeight = 500*scale;
-	patentSummeries;
+	//patentSummeries;
 
 	d3.select("#chosvg").remove();
 	drawMap();
@@ -78,8 +77,8 @@ function setup() {
 
 	d3.json("data/cpc_summary.json", function(json, error) {
 		patentSummeries = json;
-	    console.log("patentSummeries in wrapper ");
-	    console.log(patentSummeries);
+    console.log("patentSummeries in wrapper ");
+    console.log(patentSummeries);
 		setUpTable(patentSummeries);
 
 		var urlpatent = window.location.search.replace('?','').replace('/','').replace(/%20/g, ' ');
@@ -98,32 +97,18 @@ function setup() {
 	});
 
     d3.json("data/all_states.json", function(json,error) {
-//	data = json;
         cpcData = json.cpcData;
         cpcData.forEach(function(p){
-//           console.log("p.cpc "+p.cpc+"; p.fips "+p.fips);
-//	       data[p.cpc] = p;
-              p.sum = +(p.sum/100)
-              p.normalized = +p.normalized
-              year = +p.year;
-	       data[p.cpc][year][p.fips] = p;
-//             console.log(p);
-           }
-        );
-
-	//for (var key in data){
-	//    if (data.hasOwnProperty(key)) {
-		//console.log("key " + key + " data[key] " + data[key]);
-	//    }
-	//}
-//	    console.log(json);
+          p.sum = +(p.sum/100);
+          p.normalized = +p.normalized;
+          year = +p.year;
+      		data[p.cpc][year][p.fips] = p;
+        });
 		counties.selectAll("path")
-				.attr("class", quantize);
-	});
-	d3.selectAll('.currentYear').text(currentYear);
-	d3.selectAll('.currentCPC').text(currentCPC);
-
-
+			.attr("class", quantize);
+		});
+		d3.selectAll('.currentYear').text(currentYear);
+		d3.selectAll('.currentCPC').text(currentCPC);
 }
 
 function drawPatent(patent){
@@ -132,29 +117,12 @@ function drawPatent(patent){
 	currentCPC = currentCPC.replace("cpc_","");
 	console.log('currentCPC '+currentCPC);
 
-//	d3.json("data/"+patent+"_countyDisplay.json", function(json) {
-//	    data = json;
-//	    console.log(data);
-//		counties.selectAll("path")
-//				.attr("class", quantize);
-//	});
-//	d3.json("data/cpc_C_year_fips.json", function(json) {
-//    d3.json("data/"+patent+"_year_fips.csv", function(json,error) {
-
-	//for (var key in data){
-	//    if (data.hasOwnProperty(key)) {
-		//console.log("key " + key + " data[key] " + data[key]);
-	//    }
-	//}
-//	    console.log(json);
-		counties.selectAll("path")
-				.attr("class", quantize);
-//	});
+	counties.selectAll("path")
+	.attr("class", quantize);
 
 	d3.select("#currentLineGraph").remove();
 	drawLine(patent);
 
-//	history.replaceState(null, null, window.location.pathname + "?" + patent +'/');
 	highlightRow(patent);
 
 	d3.selectAll('.currentYear').text(currentYear);
@@ -164,12 +132,12 @@ function drawPatent(patent){
 
 function showfaq(){
 	$(function() {
-        $( "#faq" ).dialog(
-        	{title: "FAQ",
-        	minWidth:600,
-        	position: [390,80]}
-        );
-    });
+    $( "#faq" ).dialog(
+    	{title: "FAQ",
+    	minWidth:600,
+    	position: [390,80]}
+    );
+  });
 }
 
 window.onload = setup;

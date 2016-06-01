@@ -1,5 +1,4 @@
-﻿
-var columnNames = ["Permit Classification", "Sum", "Per Capita"]
+var columnNames = ["Permit Classification", "Sum", "Per Capita"];
 
 function setUpTable(patentJSON){
 	var chart = document.getElementById("chart");
@@ -13,31 +12,26 @@ function setUpTable(patentJSON){
 	});
 	 
 	var columns = ["name", "total", "delta"];
-//	var columns = ["name", "total", 'sumDates["2005"]'];
 
 	drawTable(dataArray, "#chart", { width: width, height: height }, columns);
 }
 
 function drawTable(data, tableid, dimensions, columns) {
-
 	var ascending = true;
-
 	var width = dimensions.width + "px";
 	var height = dimensions.height + "px";
 	var twidth = (dimensions.width - 25) + "px";
 	var divHeight = (dimensions.height - 60) + "px";
-
-//	var tbody = d3.select(tableid).append("table").attr("width", width);
 	var table = d3.select(tableid).append("table").attr("width", width);
 	var thead = table.append("thead");
 	var tbody = table.append("tbody");
-// append the header row
-    thead.append("tr")
-        .selectAll("th")
-        .data(columnNames)
-        .enter()
-        .append("th")
-            .text(function(column) { return column; });
+	//append the header row
+  thead.append("tr")
+    .selectAll("th")
+    .data(columnNames)
+    .enter()
+    .append("th")
+  	.text(function(column) { return column; });
 
 	// Create a row for each object in the data and perform an intial sort.
 	var rows = tbody.selectAll("tr")
@@ -54,9 +48,10 @@ function drawTable(data, tableid, dimensions, columns) {
 		})
 		.data(function (d) {
 			return columns.map(function (column) {
-				return { column: column, data: d};
+			return { column: column, data: d};
 			});
-		}).enter()
+		})
+		.enter()
 		.append("td")
 		.html(function (d) {
 			return tableElement(d);
@@ -74,12 +69,11 @@ function drawTable(data, tableid, dimensions, columns) {
 			var sort = function(a, b){
 				var value = (typeof a[d] == 'string') ? a[d].localeCompare(b[d]) : a[d] - b[d];
 				return ((ascending) ? -1 : 1)*value;
-			}
+			};
 			var rows = tbody.selectAll("tr").sort(sort);
 			hightlightColumn(d);
 		};
 	}
-
 }
 
 function tableElement(d){

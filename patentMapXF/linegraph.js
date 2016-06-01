@@ -12,11 +12,11 @@ function drawLine(patent){
 		.range([height, 0]);
 
 	var xAxis = d3.svg.axis()
-	    .ticks(5)
-	    .scale(x)
-	    .orient("bottom");
-//		.tickFormat(d3.time.format("%b %e"))
-//		.ticks(7);
+    .ticks(5)
+    .scale(x)
+    .orient("bottom");
+    //.tickFormat(d3.time.format("%b %e"))
+    //.ticks(7);
 
 	var yAxis = d3.svg.axis()
 		.scale(y)
@@ -38,18 +38,13 @@ function drawLine(patent){
 	var data = [];
     console.log("patent "+patent);
     console.log("dateSums "+patentSummeries[patent]);
-    var dateSums = patentSummeries[patent]['sumDates'];
+  var dateSums = patentSummeries[patent]['sumDates'];
 	var i = 0;
-        for(date in dateSums){
-//	    console.log("date "+date);
+  for(date in dateSums){
 		data[i] = {};
-//		data[i]['x'] = new Date(1000*parseFloat(date));
-//		data[i]['y'] = parseFloat(dateSums[date]);
 		data[i]['x'] = +date;
-//		data[i]['x'] = new Date(parseFloat(date));
 		data[i]['y'] = parseFloat(dateSums[date]);
 		data[i]['delta'] = patentSummeries[patent]['sumDates'][date];
-//		data[i]['delta'] = patentSummeries[patent]['dates'][date];
 		i = i + 1;
 	}
 	data.sort(function(a,b){
@@ -83,31 +78,30 @@ function drawLine(patent){
 		.attr("transform", "rotate(-90)")
 		.attr("y", 6)
 		.attr("dy", ".71em")
-		.style("text-anchor", "end")
+		.style("text-anchor", "end");
 
 	lsvg.selectAll(".dot")
 		.data(data.filter(function(d) { return d.y; }))
-	.enter().append("circle")
+	  .enter().append("circle")
 		.attr("class", "dot")
 		.attr("cx", area.x())
 		.attr("cy", area.y())
 		.attr("r", 3.5)
 		.on("mouseover", function(d){
-				var month_names_short = ['pan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-//		 		tooltip.text(d.delta + " signatures made on " + month_names_short[d.x.getMonth()] + " " + d.x.getDate());
-		 		tooltip.text(d.delta + " patentSs " +  d.x);
-		 		d3.select(this).attr('r',6);
-		 		tooltip.style("visibility", "visible");
-		 	})
+			var month_names_short = ['pan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+      	tooltip.text(d.delta + " patentSs " +  d.x);
+      	d3.select(this).attr('r',6);
+      	tooltip.style("visibility", "visible");
+  	})
 		.on("click", function(d){
-				console.log("clicked!" + d.x);
-				currentYear = d.x;
-      	        d3.selectAll('.currentYear').text(currentYear);
-				counties.selectAll("path")
-					.attr("class", quantize);
-				})
+			console.log("clicked!" + d.x);
+			currentYear = d.x;
+      d3.selectAll('.currentYear').text(currentYear);
+			counties.selectAll("path")
+      .attr("class", quantize);
+		})
 		.on("mousemove", function(){
-				tooltip.style("top", (event.pageY-10)+"px").style("left",(event.pageX+10)+"px");})
+			tooltip.style("top", (event.pageY-10)+"px").style("left",(event.pageX+10)+"px");})
 		.on("mouseout", function(){
 			d3.select(this).attr('r',3.5);
 			tooltip.style("visibility", "hidden");});

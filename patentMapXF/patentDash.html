@@ -1,82 +1,217 @@
 <!DOCTYPE html>
 <head>
-    <meta charset = "UTF-8">
-    <title>Permit Information</title>
-    <link rel = "stylesheet" href = "css/mapColors.css">
-    <link rel = "stylesheet" href = "css/myStyle.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+  <meta charset = "UTF-8">
+  <title>Permit Information</title>
+  <link rel = "stylesheet" href = "css/mapColors.css">
+  <link rel = "stylesheet" href = "css/myStyle.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+
+
+  <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.12/css/jquery.dataTables.css">
+
+  <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.12/js/jquery.dataTables.js"></script>
+
+<script type="text/javascript">
+
+  $(document).ready( function () {
+      $('#example').DataTable();
+  } );
+
+</script>
 </head>
 
 <body>
-<div class="container">
-	<div class="row">
-		<span id = "title">Title V Permits
-	        <span id = "headerLinks">
-				<a class= "blacklink" href="http://www.superHindex.com/">superH</a>
-		 		<code>|</code>
-		 		<a class = "blacklink" href="javascript:showfaq();">faq</a>
-		 		<code>|</code>
-			</span>
-		</span>
-	</div>
-	<div class="row">
-		<div id = "lineColumn" class="col-md-4 box">
-			<div class="row">
-	  		    <div id = "lineColumn" class="col-md-12">
-					<div id = "chart"></div>
-				</div>
-			</div>
-			<div class="row">
-	  		    <div id = "lineColumn" class="col-md-12">
-						<span id = "choroplethTitle" class = "graphTitle">Total Permits per Year</span>
-						<div id = "lineGraph"></div>
-						<span class = "graphInfo">Click on a year to get redraw county results on US map for that year.</span>
-						<br />
-				</div>
-			</div>
-
-		</div>
-		<div id = "graphs" class="col-md-8 box">
-
-         	<h1 id = "graphName">
-         		<div>
-         		<div align="left">Current year: <span class="currentYear">ThisYear</span>;</div>
-         		<div align="left">Current Permit Type: <span class="currentCPC">ThisCPC</span>;</div>
-         		</div>
-        	</h1>
-        	<div >
-	 			<div id = "graphContainer">
-	 				<span id = "choroplethTitle" class = "graphTitle">US County Map of Title V Permits</span>
-					<div id = "choropleth">
-						<div id = "choroplethGraph"></div>
-					</div>
+  <div class="container">
+  	<div class="row">
+  		<span id = "title">Title V Permits
+        <span id = "headerLinks">
+  				<a class= "blacklink" href="http://www.superHindex.com/">superH</a>
+      	<code>|</code>
+  		  <a class = "blacklink" href="javascript:showfaq();">faq</a>
+      	<code>|</code>
+  			</span>
+  		</span>
+  	</div>
+  	<div class="row">
+		  <div id = "lineColumn" class="col-md-4 box">
+  			<div class="row">
+  		    <div id = "lineColumn" class="col-md-12">
+  					<div id = "chart"></div>
+  				</div>
+  			</div>
+  			<div class="row">
+  		    <div id = "lineColumn" class="col-md-12">
+			      <span id = "choroplethTitle" class = "graphTitle">Total Permits per Year</span>
+			      <div id = "lineGraph"></div>
+					  <span class = "graphInfo">Click on a year to get redraw county results on US map for that year.</span>
+					<br/>
+  				</div>
+  			</div>
+  		</div>
+  		<div id = "graphs" class="col-md-8 box">
+        <h1 id = "graphName">
+      		<div>
+    		    <div align="left">Current year: <span class="currentYear">ThisYear</span>;</div>
+    		    <div align="left">Current Permit Type: <span class="currentCPC">ThisCPC</span>;</div>
+      		</div>
+      	</h1>
+      	<div>
+	        <div id = "graphContainer">
+			      <span id = "choroplethTitle" class = "graphTitle">US County Map of Title V Permits</span>
+  					<div id = "choropleth">
+				      <div id = "choroplethGraph"></div>
+  					</div>
 					<div class = "graphInfo">Darker counties indicate more permits per capita</div>
-					<br />
-				</div>
+					<br/>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+  </div>
 
-			</div>
 
 
-		</div>
-	</div>
-</div>
+
+  <table id="example" class="display" cellspacing="0" width="50%">
+          <thead>
+              <tr>
+                  <th>Name</th>
+                  <th>Position</th>
+                  <th>Office</th>
+                  <th>Age</th>
+                  <th>Start date</th>
+                  <th>Salary</th>
+              </tr>
+          </thead>
+          <tfoot>
+              <tr>
+                  <th>Name</th>
+                  <th>Position</th>
+                  <th>Office</th>
+                  <th>Age</th>
+                  <th>Start date</th>
+                  <th>Salary</th>
+              </tr>
+          </tfoot>
+          <tbody>
+              <tr>
+                  <td>Tiger Nixon</td>
+                  <td>System Architect</td>
+                  <td>Edinburgh</td>
+                  <td>61</td>
+                  <td>2011/04/25</td>
+                  <td>$320,800</td>
+              </tr>
+              <tr>
+                  <td>Garrett Winters</td>
+                  <td>Accountant</td>
+                  <td>Tokyo</td>
+                  <td>63</td>
+                  <td>2011/07/25</td>
+                  <td>$170,750</td>
+              </tr>
+
+
+              <tr>
+                  <td>Zorita Serrano</td>
+                  <td>Software Engineer</td>
+                  <td>San Francisco</td>
+                  <td>56</td>
+                  <td>2012/06/01</td>
+                  <td>$115,000</td>
+              </tr>
+              <tr>
+                  <td>Jennifer Acosta</td>
+                  <td>Junior Javascript Developer</td>
+                  <td>Edinburgh</td>
+                  <td>43</td>
+                  <td>2013/02/01</td>
+                  <td>$75,650</td>
+              </tr>
+              <tr>
+                  <td>Cara Stevens</td>
+                  <td>Sales Assistant</td>
+                  <td>New York</td>
+                  <td>46</td>
+                  <td>2011/12/06</td>
+                  <td>$145,600</td>
+              </tr>
+              <tr>
+                  <td>Hermione Butler</td>
+                  <td>Regional Director</td>
+                  <td>London</td>
+                  <td>47</td>
+                  <td>2011/03/21</td>
+                  <td>$356,250</td>
+              </tr>
+              <tr>
+                  <td>Lael Greer</td>
+                  <td>Systems Administrator</td>
+                  <td>London</td>
+                  <td>21</td>
+                  <td>2009/02/27</td>
+                  <td>$103,500</td>
+              </tr>
+              <tr>
+                  <td>Jonas Alexander</td>
+                  <td>Developer</td>
+                  <td>San Francisco</td>
+                  <td>30</td>
+                  <td>2010/07/14</td>
+                  <td>$86,500</td>
+              </tr>
+              <tr>
+                  <td>Shad Decker</td>
+                  <td>Regional Director</td>
+                  <td>Edinburgh</td>
+                  <td>51</td>
+                  <td>2008/11/13</td>
+                  <td>$183,000</td>
+              </tr>
+              <tr>
+                  <td>Michael Bruce</td>
+                  <td>Javascript Developer</td>
+                  <td>Singapore</td>
+                  <td>29</td>
+                  <td>2011/06/27</td>
+                  <td>$183,000</td>
+              </tr>
+              <tr>
+                  <td>Donna Snider</td>
+                  <td>Customer Support</td>
+                  <td>New York</td>
+                  <td>27</td>
+                  <td>2011/01/25</td>
+                  <td>$112,000</td>
+              </tr>
+          </tbody>
+      </table>
+
+
 
 
 </body>
 
-	<script src = "js/jquery.min.js"></script>
 
-    <script type = "text/javascript" src = "js/d3.v2.js"></script>
-    <link type = "text/css" rel = "stylesheet" href = "choropleth.css"/>
-    <script src = "choropleth.js"></script>
-	<script src = "patentDash.js"></script>
-	<script src = "linegraph.js"></script>
-	<script src = "table.js"></script>
 
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.0/jquery-ui.min.js"></script>
 
-	<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css" />
+<script src = "js/jquery.min.js"></script>
+<script type = "text/javascript" src = "js/d3.v2.js"></script>
+<link type = "text/css" rel = "stylesheet" href = "choropleth.css"/>
+<script src = "choropleth.js"></script>
+<script src = "patentDash.js"></script>
+<script src = "linegraph.js"></script>
+<script src = "table.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.0/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css" />
+
+
+
+
+
+
+
 
 </html>

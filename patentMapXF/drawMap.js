@@ -1,6 +1,7 @@
 function drawMap(petition){
-	var width = 900;
-	var height = 500;
+	var width = 900,
+			height = 500,
+			centered;
 
 	var quantize = d3.scale.quantize()
 			.domain([0, 1])
@@ -24,32 +25,35 @@ function drawMap(petition){
 		dC = [];
 		c = counties;
 		svg.append('g')
-				.attr('class', 'counties')
+			.attr('class', 'counties')
 			.selectAll('path')
-				.data(counties.features)
+			.data(counties.features)
 			.enter().append('path')
-				.attr('class', function(d) { 
-					console.log(d);
-					dC[dC.length] = d.id;
-					return "q0-9";
-					//return quantize(getCountyNorm(countyDisplay[d.id])); 
-				})
-				.attr('d', path)
-		 		.on('mouseover', function(d){
-		 			console.log(d);
-		 			displayMouseOver(d.properties.name, countyDisplay[d.id]['sum']);
-		 		});
-        
+			.attr('class', function(d) {
+				console.log(d);
+				dC[dC.length] = d.id;
+				return "q0-9";
+			})
+			.attr('d', path)
+	 		.on('mouseover', function(d){
+	 			console.log(d);
+	 			displayMouseOver(d.properties.name, countyDisplay[d.id]['sum']);
+	 		});
+
 		svg.append("path")
 				.datum(states)
 				.attr("class", "states")
 				.attr("d", path);
 	}
 
+
+
+
+
 	function getCountyNorm(county){
 		try{
-//			return county['sum'];
-//			return county['normalized'];
+			//return county['sum'];
+			//return county['normalized'];
 		}
 		catch(e){
 			return 0;
