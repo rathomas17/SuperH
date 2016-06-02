@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <head>
   <meta charset = "UTF-8">
   <title>Permit Information</title>
@@ -8,17 +8,23 @@
   <link rel="stylesheet" type="text/css" href="css/main.css">
 
 
+
+
   <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.12/css/jquery.dataTables.css">
 
   <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.12/js/jquery.dataTables.js"></script>
 
-<script type="text/javascript">
 
-  $(document).ready( function () {
-      $('#example').DataTable();
-  } );
+  <script type="text/javascript">
 
-</script>
+    $(document).ready( function () {
+        $('#example').DataTable();
+    } );
+
+  </script>
+
+
+
 </head>
 
 <body>
@@ -73,7 +79,7 @@
 
 
 
-  <table id="example" class="display" cellspacing="0" width="50%">
+  <table id="example" class="display" cellspacing="0" width="100%">
           <thead>
               <tr>
                   <th>Name</th>
@@ -189,29 +195,16 @@
       </table>
 
 
+      <script src = "js/jquery.min.js"></script>
+      <script type = "text/javascript" src = "js/d3.v2.js"></script>
+      <link type = "text/css" rel = "stylesheet" href = "choropleth.css"/>
+      <script src = "choropleth.js"></script>
+      <script src = "patentDash.js"></script>
+      <script src = "linegraph.js"></script>
+      <script src = "table.js"></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.0/jquery-ui.min.js"></script>
+      <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css" />
 
 
 </body>
-
-
-
-
-<script src = "js/jquery.min.js"></script>
-<script type = "text/javascript" src = "js/d3.v2.js"></script>
-<link type = "text/css" rel = "stylesheet" href = "choropleth.css"/>
-<script src = "choropleth.js"></script>
-<script src = "patentDash.js"></script>
-<script src = "linegraph.js"></script>
-<script src = "table.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.0/jquery-ui.min.js"></script>
-<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css" />
-
-
-
-
-
-
-
-
-</html>

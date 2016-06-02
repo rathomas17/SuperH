@@ -35,32 +35,30 @@ i = 0
 
 rows = cur_fetch.fetchall()
 fipsrows = cur_fetch2.fetchall()
-if i < 10:
-    
-    for row in rows:
-       FacilityName = row['FacilityName']
-       County = row['County']
-
-       #print 'Row data: FacilityName ',FacilityName,'; County ',County
 
 
+for row in rows:
+   FacilityName = row['FacilityName']
+   County = row['County']
 
-       print i
-       i = i + 1
-       for row2 in fipsrows:
+   #print 'Row data: FacilityName ',FacilityName,'; County ',County
 
-           fips = row2['fips']
-           name = row2['name']
+
+   i = i + 1
+   for row2 in fipsrows:
+
+       fips = row2['fips']
+       name = row2['name']
 
 
 
 
-           if i < 10 and County == name:
-                print fips, i
+       if i < 10 and County == name:
+            print fips, i
 
-                #{"cpc":"A", "fips":"39001", "sum":100, "normalized":100, "year":2015}
+            #{"cpc":"A", "fips":"39001", "sum":100, "normalized":100, "year":2015}
 
-                f = open('myfile.txt','a')
-                f.write('"lol"')
-                f.write("\n")
-                f.close()
+            f = open('myfile.txt','a')
+            f.write('"lol"')
+            f.write("\n")
+            f.close()

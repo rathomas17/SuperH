@@ -40,27 +40,26 @@ function drawMap() {
 
 	d3.json("data/us-counties.json", function(json) {
 		counties.selectAll("path")
-				.data(json.features)
-				.enter().append("path")
-				.attr("class", data ? quantize : null)
-				.attr("d", path)
-				//added for click
-				.on("click", clicked)
-				//end added for click
-				.on("mouseover", function(d){
-
-		    	val = data[currentCPC][currentYear][d.id]['normalized'];
-						tooltip.text(d.properties.name + " County: " + val + " Permits");
-						d3.select(this).style('stroke-width','4px');
-						d3.select(this).style('stroke','red');
-						tooltip.style("visibility", "visible");
-				})
-				.on("mousemove", function(){
-					tooltip.style("top", (event.pageY-10)+"px").style("left",(event.pageX+10)+"px");})
-				.on("mouseout", function(){
-					d3.select(this).style('stroke-width','.25px');
-					d3.select(this).style('stroke','grey');
-					tooltip.style("visibility", "hidden");});
+			.data(json.features)
+			.enter().append("path")
+			.attr("class", data ? quantize : null)
+			.attr("d", path)
+			//added for click
+			.on("click", clicked)
+			//end added for click
+			.on("mouseover", function(d){
+	    	val = data[currentCPC][currentYear][d.id]['normalized'];
+					tooltip.text(d.properties.name + " County: " + val + " Permits");
+					d3.select(this).style('stroke-width','4px');
+					d3.select(this).style('stroke','red');
+					tooltip.style("visibility", "visible");
+			})
+			.on("mousemove", function(){
+				tooltip.style("top", (event.pageY-10)+"px").style("left",(event.pageX+10)+"px");})
+			.on("mouseout", function(){
+				d3.select(this).style('stroke-width','.25px');
+				d3.select(this).style('stroke','grey');
+				tooltip.style("visibility", "hidden");});
 	});
 
 	d3.json("data/us-states.json", function(json) {
