@@ -47,7 +47,7 @@ h6 {
 }
 
 .graphInfo{
-	font-size: 95%;
+	font-size: 65%;
 	font-style: italic;
 }
 
@@ -56,7 +56,7 @@ h6 {
 
 #left {
 	width: 395px;
-	float: left; 
+	float: left;
 	overflow:hidden;
 	background: #eee;
 }
@@ -84,7 +84,7 @@ h6 {
 
 #delta{
 	margin-left: 48px;
-	vertical-align: text-top; 
+	vertical-align: text-top;
 	font-size:120%;
 }
 
@@ -116,12 +116,12 @@ tr{
  	border-right-style: solid;
 }
 
- tr:hover { 
- 	background: lightgrey !important; 
+ tr:hover {
+ 	background: lightgrey !important;
  	border-right-width: 8px;
  	border-right-style: solid;
  	border-right-color: lightgrey;
- } 
+ }
 
 .tableElement{
 	text-align: center;
@@ -164,9 +164,10 @@ svg{
 
 #graphContainer{
 	display:inline-block;
-	margin-right: 20px;
+	margin-left: 200px;
 	float:top;
 	vertical-align: top;
+
 }
 
 #choroplethGraph{
@@ -174,7 +175,7 @@ svg{
 }
 
 #chosvg{
-	border-bottom: 0px solid red;	
+	border-bottom: 0px solid red;
 }
 
 #lineContainer{
@@ -182,14 +183,14 @@ svg{
 }
 
 #footer {
-	height: 25px; 
+	height: 25px;
 	clear: both;
 	color: #ccc;
 	background: #330000;
 }
 #footer p {
 	margin: 0;
-	text-indent: 20px; 
+	text-indent: 20px;
 }
 
 
@@ -211,7 +212,7 @@ h4{
 
 .petition-detail div{
 	display: none;
-} 
+}
 
 .axis path,
 .axis line {

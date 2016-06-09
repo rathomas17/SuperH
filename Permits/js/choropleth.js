@@ -3,7 +3,7 @@
 var data; // loaded asynchronously
 var counties;
 var tooltip;
- //width: 960px;
+ // width: 960px;
  //height: 500px;
 
 function drawMap() {
@@ -12,10 +12,10 @@ function drawMap() {
 	var svg = d3.select("#choroplethGraph")
 		.append("svg")
 		.attr("id", "chosvg")
-		.attr("height", xHeight)
+		.attr("height", 400)
 		//.attr("height", 500)
-		.attr("viewBox", "0 0 960 500")
-    .attr("width", xWidth)
+		.attr("viewBox", "0 0 870 530")
+    .attr("width", 640)
 		//.attr("width", 900)
     .attr("preserveAspectRatio", "true")
 		//added for click
