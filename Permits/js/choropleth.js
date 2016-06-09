@@ -38,7 +38,7 @@ function drawMap() {
 		.append("div")
 		.attr("id","tooltip");
 
-	d3.json("data/us-counties.json", function(json) {
+	d3.json("data/JSON/us-counties.json", function(json) {
 		counties.selectAll("path")
 			.data(json.features)
 			.enter().append("path")
@@ -62,7 +62,7 @@ function drawMap() {
 				tooltip.style("visibility", "hidden");});
 	});
 
-	d3.json("data/us-states.json", function(json) {
+	d3.json("data/JSON/us-states.json", function(json) {
 		states.selectAll("path")
 			.data(json.features)
 			.enter().append("path")
