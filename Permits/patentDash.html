@@ -40,10 +40,17 @@
         <span id = "headerLinks">
   				<a class= "blacklink" href="http://www.superHindex.com/">superH</a>
       	<code>|</code>
-  		  <a class = "blacklink" href="javascript:showfaq();">faq</a>
-      	<code>|</code>
+  		  <a class = "blacklink" onclick="patchNotes()">patch notes</a>
+      	<code>|</code> <div> Version 1.1.8</div>
   			</span>
       </h1>
+                <script>
+                function patchNotes() {
+                    alert("Version 1.1.8: Functioning Layout. Responding Map. Resizable Windows.");
+
+                }
+                </script>
+
   	</div>
     <!--END OF TITLE-->
     <!--END OF ROW 1-->
@@ -201,7 +208,7 @@
                 })
                   .duration(1000)
                   .text(function (d) {
-                  return d.value;
+                  return d.year;
                 })
                   .attr("text-anchor", "middle")
                   .attr("x", function (d, i) {
