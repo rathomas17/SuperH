@@ -70,14 +70,21 @@ function makeStateTable() {
 				                "visible": false
 
 				            }
-				        ]
+				        ],
+
+			 "asStripeClasses": [ 'strip1']
 	    });
+
+
 
 	    tableSelect.style("visibility", "visible");
       $('#state_table tbody')
         .on( 'mouseover', 'tr', function () { highlight(this, true); } )
         .on( 'mouseleave', 'tr', function () { highlight(this, false); } )
         //.on('click', 'tr', function () { select(this); });
+
+
+
 	  });
 	}
 

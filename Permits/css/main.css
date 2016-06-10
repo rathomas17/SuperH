@@ -1,4 +1,9 @@
 /* main.css: Add and override styles */
+
+#title {
+  color: white;
+}
+
 .dc-data-count small {
   font-size: 16px;
 }
@@ -23,11 +28,21 @@
 }
 
 
+#highlighted{
+  color: white;
+}
+
+#selected{
+  color: white;
+}
+
+
 
 
 
 text {
   font-size: 16px;
+
 }
 
 #map {
@@ -49,6 +64,11 @@ a { cursor: pointer }
     overflow-y: scroll;
 }
 
+.strip1{
+  
+
+}
+
 
 .axis path,
 .axis line {
@@ -59,6 +79,7 @@ a { cursor: pointer }
 .axis text {
   font-family: sans-serif;
   font-size: 11px;
+
 }
 
 rect {
@@ -68,5 +89,5 @@ rect {
   transition: all 0.3s;
 }
 rect:hover{
-  fill: orange;
+  fill: #f9c8a8;
 }

@@ -1,9 +1,9 @@
 svg {
-  background: #eee;
+  background: transparent;
 }
 
 #lineGraph{
-	background: #eee;
+	background: transparent;
 }
 
 #counties path {

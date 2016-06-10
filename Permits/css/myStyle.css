@@ -22,9 +22,7 @@ h6 {
 	background:rgb(198,219,239);
 }
 
-#title{
-	margin-left: 15px
-}
+
 
 .blacklink{
 	color:black;
@@ -52,6 +50,7 @@ h6 {
 }
 
 #container {
+
 }
 
 #left {
@@ -138,6 +137,9 @@ tr{
 	width: 70px;
 }
 
+
+
+
 .delta{
 	width: 70px;
 }
@@ -193,6 +195,11 @@ svg{
 	text-indent: 20px;
 }
 
+#whiteText {
+
+color: white;
+
+}
 
 
 h2, h3 {
