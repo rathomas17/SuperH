@@ -1,5 +1,6 @@
 
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset = "UTF-8">
   <title>Permit Information</title>
   <link rel = "stylesheet" href = "css/mapColors.css">
@@ -41,12 +42,12 @@
   				<a id="whiteText" class= "blacklink" href="http://www.superHindex.com/">superH</a>
       	<code>|</code>
   		  <a id="whiteText" class = "blacklink" onclick="patchNotes()">patch notes</a>
-      	<code>|</code> <div> Version 1.1.8</div>
+      	<code>|</code> <div> Version 1.2.0</div>
   			</span>
       </h1>
                 <script>
                 function patchNotes() {
-                    alert("Version 1.1.8: Functioning Layout. Responding Map. Resizable Windows.");
+                    alert("Version 1.2.0: Added mobile view.");
 
                 }
                 </script>
@@ -59,9 +60,9 @@
 
 
     <!--ROW 2-->
-    <div class="row">
+    <div  class="row">
         <!--STATE DATA TABLE-->
-      <div id = "lineColumn" class="col-md-4">
+      <div  id = "lineColumn" class="col-md-4">
 
             <div id='juice' class="row"></div>
               <div>
@@ -339,7 +340,7 @@
 <!--DATATABLE-->
 <div id='highlighted'>Nothing Highlighted</div>
 <div id='selected'>Nothing Selected</div>
-<div id='container'></div>
+<div id='container' class="col-xs-12"></div>
 <div>
   <script>
    table_plot = makeTable()

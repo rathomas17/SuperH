@@ -1,5 +1,11 @@
 /* main.css: Add and override styles */
 
+
+body {
+  background: url(../images/background1.jpg);
+  background-size: 4000px auto;
+}
+
 #title {
   color: white;
 }
@@ -65,9 +71,12 @@ a { cursor: pointer }
 }
 
 .strip1{
-  
+
 
 }
+
+
+
 
 
 .axis path,
@@ -90,4 +99,19 @@ rect {
 }
 rect:hover{
   fill: #f9c8a8;
+}
+
+
+/* MOBILE VIEW */
+
+
+  @media (max-width: 480px) {
+#juice{
+    margin-left: 50px;
+}
+ #StateBar{
+
+    margin-left: 50px;
+
+  }
 }

@@ -35,6 +35,14 @@ h6 {
 }
 
 
+@media (max-width: 480px) {
+	#headerLinks{
+		margin-left: 0px;
+		font-size: 80%;
+	}
+}
+
+
 #graphName{
 	text-align: center;
 	font-size: 170%;
@@ -48,9 +56,15 @@ h6 {
 	font-size: 65%;
 	font-style: italic;
 }
-
+@media (max-width: 480px) {
 #container {
+margin-left: 105px;
+}
 
+
+#graphs{
+	margin-left: -20px;
+}
 }
 
 #left {
@@ -169,6 +183,19 @@ svg{
 	margin-left: 200px;
 	float:top;
 	vertical-align: top;
+
+}
+
+@media (max-width: 480px) {
+
+	#graphContainer{
+		display:inline-block;
+		margin-left: 0px;
+		float:top;
+		vertical-align: top;
+
+	}
+
 
 }
 
