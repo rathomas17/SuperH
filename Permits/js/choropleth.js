@@ -2,9 +2,12 @@
 
 var data; // loaded asynchronously
 var counties;
-var tooltip;
+var tooltip
+var centered;
  // width: 960px;
  //height: 500px;
+
+
 
 function drawMap() {
 	var path = d3.geo.path();
@@ -19,6 +22,7 @@ function drawMap() {
 		//.attr("width", 900)
     .attr("preserveAspectRatio", "true")
 		//added for click
+		
 		.on("click", clicked);
 		//end added for click
 
@@ -92,6 +96,11 @@ function clicked(d) {
   	k = 1;
   	centered = null;
 	}
+
+	counties.transition()
+	      	.duration(750)
+	      	.attr("transform", "translate(" + xWidth / 2 + "," + xHeight / 2 + ")scale(" + k + ")translate(" + -x + "," + -y + ")")
+	      	.style("stroke-width", 1.5 / k + "px");
 
   g.selectAll("path")
     .classed("active", centered && function(d) { return d === centered; });

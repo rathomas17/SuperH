@@ -1,0 +1,420 @@
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset = "UTF-8">
+  <title>Permit Information</title>
+  <link rel = "stylesheet" href = "css/mapColors.css">
+  <link rel = "stylesheet" href = "css/myStyle.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link type = "text/css" rel = "stylesheet" href = "css/choropleth.css"/>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css" />
+  <link rel="stylesheet" type="text/css"  href="https://cdn.datatables.net/1.10.9/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.0/jquery-ui.min.js"></script>
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://cdn.datatables.net/1.10.9/js/jquery.dataTables.min.js"></script>
+  <script src="data/JS/state_data.js"></script>
+  <script src="data/JS/county_data.js"></script>
+  <script src="js/makeTable.js"></script>
+  <script src="js/makeStateTable.js"></script>
+
+  <script type = "text/javascript" src = "js/libraries/d3.v2.js"></script>
+  <script src = "js/choropleth.js"></script>
+  <script src = "js/patentDash.js"></script>
+  <script src = "js/linegraph.js"></script>
+  <script src = "js/table.js"></script>
+</head>
+
+
+<body background="images/background1.jpg">
+<div class="container-fluid">
+
+  <div class="row">
+
+
+    <!--ROW 1-->
+    <!--TITLE-->
+  		<h1 id = "title">Title V Permits
+        <span id = "headerLinks">
+  				<a id="whiteText" class= "blacklink" href="http://www.superHindex.com/">superH</a>
+      	<code>|</code>
+  		  <a id="whiteText" class = "blacklink" onclick="patchNotes()">patch notes</a>
+      	<code>|</code> <div> Version 1.2.0</div>
+  			</span>
+      </h1>
+                <script>
+                function patchNotes() {
+                    alert("Version 1.2.0: Added mobile view.");
+
+                }
+                </script>
+
+  	</div>
+    <!--END OF TITLE-->
+    <!--END OF ROW 1-->
+
+
+
+
+    <!--ROW 2-->
+    <div  class="row">
+        <!--STATE DATA TABLE-->
+      <div  id = "lineColumn" class="col-md-4">
+
+            <div id='juice' class="row"></div>
+              <div>
+              <script>
+              var state_plot = makeStateTable()
+                .datum(state_data)
+
+                .sortBy('Permits', false)
+                //.filterCols(['col', 'x', 'y']);
+
+              d3.select('#juice').call(state_plot);
+
+              </script>
+
+            </div>
+            <!--NEW BAR GRAPH-->
+
+          <div class="row">
+            <div id="StateBar"></div>
+            <!--bar graph buttons-->
+            <button id="sort" onclick="sortBars()">Sort</button>
+                <button id="reset" onclick="reset()">Reset</button>
+
+
+
+                <script>
+                var w = 500;
+                var h = 145;
+
+                var dataset = [
+                { year: 2006, key: 0, value: 1 },
+                { year: 2007, key: 1, value: 22 },
+                { year: 2008, key: 2, value: 13 },
+                { year: 2009, key: 3, value: 19 },
+                { year: 2010, key: 4, value: 21 },
+                { year: 2011, key: 5, value: 25 },
+                { year: 2012, key: 6, value: 22 },
+                { year: 2013, key: 7, value: 18 },
+                { year: 2014, key: 8, value: 15 },
+                { year: 2015, key: 9, value: 13 }];
+
+                var xScale = d3.scale.ordinal()
+                  .domain(d3.range(dataset.length))
+                  .rangeRoundBands([0, w], 0.05);
+
+                var yScale = d3.scale.linear()
+                  .domain([0, d3.max(dataset, function(d) {return d.value;})])
+                  .range([0, h]);
+
+                var key = function(d) {
+                return d.key;
+                };
+
+                //Create SVG element
+                var svg = d3.select("#StateBar")
+                .append("svg")
+                .attr("width", w)
+                .attr("height", h);
+
+                //Create bars
+                svg.selectAll("rect")
+                .data(dataset, key)
+                .enter()
+                .append("rect")
+                .attr("x", function(d, i) {
+                return xScale(i);
+                })
+                .attr("y", function(d) {
+                return h - yScale(d.value);
+                })
+                .attr("width", xScale.rangeBand())
+                .attr("height", function(d) {
+                return yScale(d.value);
+                })
+                .attr("fill", function(d) {
+                return "rgb(0, 0, " + (d.value * 10) + ")";
+                })
+
+                //Tooltip
+                .on("mouseover", function(d) {
+                //Get this bar's x/y values, then augment for the tooltip
+                var xPosition = parseFloat(d3.select(this).attr("x")) + xScale.rangeBand() / 2;
+                var yPosition = parseFloat(d3.select(this).attr("y")) + 14;
+
+                //Update Tooltip Position & value
+                d3.select("#tooltip")
+                .style("left", xPosition + "px")
+                .style("top", yPosition + "px")
+                .select("#value")
+                .text(d.value);
+                d3.select("#tooltip").classed("hidden", false)
+              });
+                //.on("mouseout", function() {
+                //Remove the tooltip
+                //d3.select("#tooltip").classed("hidden", true);
+                //})	;
+
+                //Create labels
+                svg.selectAll("text")
+                .data(dataset, key)
+                .enter()
+                .append("text")
+                .text(function(d) {
+                return d.year;
+                })
+                .attr("text-anchor", "middle")
+                .attr("x", function(d, i) {
+                return xScale(i) + xScale.rangeBand() / 2;
+                })
+                .attr("y", function(d) {
+                return h - yScale(d.value) + 14;
+                })
+                .attr("font-family", "sans-serif")
+                .attr("font-size", "11px")
+                .attr("fill", "white");
+
+                var sortOrder = false;
+                var sortBars = function () {
+                sortOrder = !sortOrder;
+
+                sortItems = function (a, b) {
+                  if (sortOrder) {
+                      return a.value - b.value;
+                  }
+                  return b.value - a.value;
+                };
+
+                svg.selectAll("rect")
+                  .sort(sortItems)
+                  .transition()
+                  .delay(function (d, i) {
+                  return i * 50;
+                })
+                  .duration(1000)
+                  .attr("x", function (d, i) {
+                  return xScale(i);
+                });
+
+                svg.selectAll('text')
+                  .sort(sortItems)
+                  .transition()
+                  .delay(function (d, i) {
+                  return i * 50;
+                })
+                  .duration(1000)
+                  .text(function (d) {
+                  return d.year;
+                })
+                  .attr("text-anchor", "middle")
+                  .attr("x", function (d, i) {
+                  return xScale(i) + xScale.rangeBand() / 2;
+                })
+                  .attr("y", function (d) {
+                  return h - yScale(d.value) + 14;
+                });
+                };
+                // Add the onclick callback to the button
+                d3.select("#sort").on("click", sortBars);
+                d3.select("#reset").on("click", reset);
+                function randomSort() {
+
+
+                svg.selectAll("rect")
+                  .sort(sortItems)
+                  .transition()
+                  .delay(function (d, i) {
+                  return i * 50;
+                })
+                  .duration(1000)
+                  .attr("x", function (d, i) {
+                  return xScale(i);
+                });
+
+                svg.selectAll('text')
+                  .sort(sortItems)
+                  .transition()
+                  .delay(function (d, i) {
+                  return i * 50;
+                })
+                  .duration(1000)
+                  .text(function (d) {
+                  return d.value;
+                })
+                  .attr("text-anchor", "middle")
+                  .attr("x", function (d, i) {
+                  return xScale(i) + xScale.rangeBand() / 2;
+                })
+                  .attr("y", function (d) {
+                  return h - yScale(d.value) + 14;
+                });
+                }
+                function reset() {
+                svg.selectAll("rect")
+                .sort(function(a, b){
+                return a.key - b.key;
+                })
+                .transition()
+                  .delay(function (d, i) {
+                  return i * 50;
+                })
+                  .duration(1000)
+                  .attr("x", function (d, i) {
+                  return xScale(i);
+                });
+
+                svg.selectAll('text')
+                  .sort(function(a, b){
+                return a.key - b.key;
+                })
+                  .transition()
+                  .delay(function (d, i) {
+                  return i * 50;
+                })
+                  .duration(1000)
+                  .text(function (d) {
+                  return d.value;
+                })
+                  .attr("text-anchor", "middle")
+                  .attr("x", function (d, i) {
+                  return xScale(i) + xScale.rangeBand() / 2;
+                })
+                  .attr("y", function (d) {
+                  return h - yScale(d.value) + 14;
+                });
+                };
+                </script>
+
+
+
+
+
+  		    </div>
+          <!--END OF NEW BAR GRAPH-->
+      </div>
+          <!--END OF STATE DATA TABLE-->
+
+
+
+
+
+
+  		<div id = "graphs" class="col-md-8">
+        <!--MAP TITLE-->
+
+        <!--END OF MAP TITLE-->
+
+        <!--MAP-->
+      	<div>
+	        <div id = "graphContainer">
+            <span id="whiteText" class = "graphTitle">US County Map of Title V Permits</span>
+
+  					<div id = "choropleth">
+				      <div id = "choroplethGraph"></div>
+  					</div>
+            <div class="col-md-6">
+            <div id="whiteText" align="left">Current year: <span class="currentYear">ThisYear</span></div>
+            <div id="whiteText">Current Permit Type: <span class="currentCPC">ThisCPC</span></div>
+            </div>
+            <div class="graphInfo">Darker counties indicate more permits per capita</div>
+
+
+					<br/>
+  				</div>
+  			</div>
+        <!--END OF MAP-->
+  		</div>
+
+  </div>
+
+  <!--END OF ROW 2-->
+
+
+<!--ROW 3-->
+<div class="row">
+<!--DATATABLE-->
+<div id='highlighted'>Nothing Highlighted</div>
+<div id='selected'>Nothing Selected</div>
+<div id='container' class="col-xs-12"></div>
+<div>
+  <script>
+   table_plot = makeTable()
+    .datum(county_data)
+
+    .sortBy('Sum', false)
+    //.filterCols(['col', 'x', 'y']);
+
+  d3.select('#container').call(table_plot);
+
+  table_plot.on('highlight', function(data, on_off){
+    if(on_off){//if the data is highlighted
+      d3.select('#highlighted').text(
+        'Click ' + data.County + ' county for more information.'
+      );
+    }
+  });
+  table_plot.on('select', function(data, on_off){
+    if(on_off){//if the data is highlighted
+      d3.select('#selected').text(
+        'You have selected ' + data.County + ' (' + data.ID + ')'
+      );
+    }
+  });
+  </script>
+
+</div>
+
+<!--END OF DATATABLE-->
+</div>
+<!--END OF ROW 3-->
+
+</div>
+</body>
+
+
+
+<!--OLD CODE-->
+
+
+<!--old cpc table
+<div id = "chart"></div>
+<div class="row">
+  <div id = "lineColumn" class="col-md-12">
+    <span id = "choroplethTitle" class = "graphTitle">Total Permits per Year</span>
+    <div id = "lineGraph"></div>
+    <span class = "graphInfo">Click on a year to get redraw county results on US map for that year.</span>
+  <br/>
+  </div>
+</div>
+
+end of old cpc table-->
+
+
+<!--state_plot.on('highlight', function(data, on_off){
+  if(on_off){//if the data is highlighted
+    d3.select('#highlighted').text(
+      'Click ' + data.State + ' county for more information.'
+    );
+  }
+});
+state_plot.on('select', function(data, on_off){
+  if(on_off){//if the data is highlighted
+    d3.select('#selected').text(
+      'You have selected ' + data.State + ' (' + data.State + ')'
+    );
+  }
+});-->
+
+
+<!--cpc table
+<div class="row">
+<div id = "lineColumn" class="col-md-12">
+ <div id = "chart"></div>
+</div>
+</div>
+end of cpc table-->
