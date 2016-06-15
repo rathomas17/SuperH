@@ -107,11 +107,17 @@ rect:hover{
 
   @media (max-width: 480px) {
 #juice{
-    margin-left: 50px;
+    margin-left: 160px;
 }
  #StateBar{
 
-    margin-left: 50px;
+    margin-left: 150px;
 
+  }
+  #contianer{
+    width:100%;
+  }
+  #gene_table{
+    width:6443px;
   }
 }

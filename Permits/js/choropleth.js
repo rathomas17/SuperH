@@ -1,49 +1,79 @@
 // This draws the US map, with both state and county boundaries
 
-var data; // loaded asynchronously
+//var data; // loaded asynchronously
 var counties;
-var tooltip
-var centered;
- // width: 960px;
- //height: 500px;
+var tooltip;
+//xWwidth =900;
+//xHeight = 600;
+var compareJSON;
 
+var centered;
+var alreadyMade = false;
+var path = d3.geo.path();
+var data;
+var states;
 
 
 function drawMap() {
-	var path = d3.geo.path();
+
+	console.log("here, data is: ");
+	console.log(data["A"]["2015"]["22079"]);
+
+
+	var projection = d3.geo.albersUsa()
+	.scale(850)
+	.translate([450,250]);
+
+	var path = d3.geo.path().projection(projection);
+
+	tooltip = d3.select("body")
+	.append("div")
+	.attr("id","tooltip");
 
 	var svg = d3.select("#choroplethGraph")
 		.append("svg")
 		.attr("id", "chosvg")
-		.attr("height", 400)
+		.attr("height", 500)
 		//.attr("height", 500)
-		.attr("viewBox", "0 0 870 530")
-    .attr("width", 640)
+		//.attr("viewBox", "0 0 870 530")
+		.attr("width", 900)
 		//.attr("width", 900)
-    .attr("preserveAspectRatio", "true")
+    	//.attr("preserveAspectRatio", "true")
 		//added for click
-		
-		.on("click", clicked);
+		//.on("click", clicked);
 		//end added for click
 
-	counties = svg.append("g")
-		.attr("id", "counties")
-		.attr("class", "Blues")
-		//added for click
-		.on("click", clicked);
-		//end added for click
-	var states = svg.append("g")
-		.attr("id", "states")
-		//added for click
-		.on("click", clicked);
-		//end added for click
 
-	tooltip = d3.select("body")
-		.append("div")
-		.attr("id","tooltip");
+	//zoom box
+	svg.append("rect")
+		.attr("class", "background")
+		.attr("fill", "none")
+		.attr("width", xWidth)
+		.attr("height", xHeight)
+		.on("click", clicked);
 
+	states = svg.append("g");
+	d3.json("data/JSON/us-states.json", function(json) {
+		states.append("g")
+			.attr("id", "states")
+			.selectAll("path")
+			.data(json.features)
+			.enter().append("path")
+			.attr("d", path)
+			.on("click", clicked);
+	});
+
+	counties = svg.append("g");
 	d3.json("data/JSON/us-counties.json", function(json) {
-		counties.selectAll("path")
+		console.log("data is: ");
+  		var x = data["A"][2015][22079];
+  		console.log("x is: ")
+  		console.log(x);
+		counties
+			.attr("class", "Blues")
+			.selectAll("path")
+			.attr("id", "county")
+			//.attr("class", "Blues")
 			.data(json.features)
 			.enter().append("path")
 			.attr("class", data ? quantize : null)
@@ -52,11 +82,15 @@ function drawMap() {
 			.on("click", clicked)
 			//end added for click
 			.on("mouseover", function(d){
-	    	val = data[currentCPC][currentYear][d.id]['normalized'];
+				if(data[currentCPC][currentYear][d.id]!=null){
+					val = data[currentCPC][currentYear][d.id]['normalized'];
 					tooltip.text(d.properties.name + " County: " + val + " Permits");
-					d3.select(this).style('stroke-width','4px');
-					d3.select(this).style('stroke','red');
-					tooltip.style("visibility", "visible");
+				} else {
+					tooltip.text(d.properties.name + "County : NO DATA");
+				}
+				d3.select(this).style('stroke-width','4px');
+				d3.select(this).style('stroke','red');
+				tooltip.style("visibility", "visible");
 			})
 			.on("mousemove", function(){
 				tooltip.style("top", (event.pageY-10)+"px").style("left",(event.pageX+10)+"px");})
@@ -66,12 +100,7 @@ function drawMap() {
 				tooltip.style("visibility", "hidden");});
 	});
 
-	d3.json("data/JSON/us-states.json", function(json) {
-		states.selectAll("path")
-			.data(json.features)
-			.enter().append("path")
-			.attr("d", path);
-	});
+
 }
 
 
@@ -91,25 +120,35 @@ function clicked(d) {
     centered = d;
   }
 	else {
-  	x = width / 2;
-		y = height / 2;
+  	x = 900 / 2;
+		y = 450 / 2;
   	k = 1;
   	centered = null;
 	}
 
-	counties.transition()
-	      	.duration(750)
-	      	.attr("transform", "translate(" + xWidth / 2 + "," + xHeight / 2 + ")scale(" + k + ")translate(" + -x + "," + -y + ")")
-	      	.style("stroke-width", 1.5 / k + "px");
+  counties.selectAll("path")
+    .classed("active", centered && function(d) {
+    	d3.select(this)
+    		.attr("stroke","black")
+    		.on("mouseenter", function(d){
 
-  g.selectAll("path")
-    .classed("active", centered && function(d) { return d === centered; });
+    		})
 
-  g.transition()
+
+    	return d === centered;
+    	});
+
+  counties.transition()
     .duration(750)
-    .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")scale(" + k + ")translate(" + -x + "," + -y + ")")
-    .style("stroke-width", 1.5 / k + "px");
+    .attr("transform", "translate(" + 900 / 2 + "," + 500 / 2 + ")scale(" + k + ")translate(" + -x + "," + -y + ")")
+    .style("stroke-width", 0.2 / k + "px");
+
+  states.transition()
+  	.duration(750)
+  	.attr("transform", "translate(" + 900 / 2 + "," + 500/ 2 + ")scale(" + k + ")translate(" + -x + "," + -y + ")")
+  	.style("stroke-width", 0.2 / k + "px");
 }
+
 //end click function
 
 

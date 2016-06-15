@@ -109,6 +109,10 @@ function setup() {
 		});
 		d3.selectAll('.currentYear').text(currentYear);
 		d3.selectAll('.currentCPC').text(currentCPC);
+
+		console.log("in setup");
+		console.log(data["A"]["2015"]["22079"]);
+		
 }
 
 function drawPatent(patent){

@@ -15,6 +15,7 @@ function makeTable() {
 			// you can't have 2 table plots in one page (both will have the same id).
 			// I will leave it for now for simplicity. TODO: remove hard-coded id.
 	    .attr("id", "gene_table")
+		
 	    .style("visibility", "hidden"); // Hide table until style loads;
 
 	  // Set column names
@@ -48,7 +49,7 @@ function makeTable() {
 	  $(document).ready(function() {
 	    table = $('#gene_table').DataTable({
 
-        
+
 
 				// Here, I am supplying DataTable with the data to fill the table.
 				// This is more efficient than supplying an already contructed table.
