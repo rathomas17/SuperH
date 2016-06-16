@@ -18,7 +18,7 @@ con = mdb.connect(read_default_file=u'./genUser.cnf', db=u'State_Permits', chars
 cur_fetch = con.cursor(mdb.cursors.DictCursor)
 
 
-sel = u'''select fips, count from mississippi_counties'''
+sel = u'''select fips, count from california_counties'''
 
 
 
@@ -44,7 +44,7 @@ if i < 10:
        print fips, count
 
        f = open('myfile.txt','a')
-       f.write(',{"cpc":"A", "fips":"')
+       f.write(',{"cpc":"A", "fips":"00')
        f.write(fips)
        f.write('", "sum":')
        f.write(count)

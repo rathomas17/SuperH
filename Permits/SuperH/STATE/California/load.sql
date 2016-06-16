@@ -1,12 +1,13 @@
 DROP TABLE IF EXISTS California;
 
 CREATE TABLE California (
-Facility varchar(200),
-State varchar(50),
+ID varchar(10),
+Facility varchar(50),
 Location varchar(20),
-Type varchar(100),
-Status varchar(100),
-Related_Documents varchar(200)
+County varchar(10),
+Initial varchar(40),
+Renewal varchar(40),
+Fips varchar(10)
 );
 
 LOAD DATA INFILE '~/Desktop/SuperH/STATE/California/California.csv'

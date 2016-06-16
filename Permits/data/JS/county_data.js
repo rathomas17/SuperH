@@ -95,64 +95,64 @@ var county_data = [
   ,{"Type":"Title V", "County":"Yell", "Sum":0, "State":"Arkansas", "ID":5149, "Year":2015}
 
 
-  ,{"Type":"Title V", "County":"Alameda", "Sum":0, "State":"California", "ID":6001, "Year":2015}
-  ,{"Type":"Title V", "County":"Alpine", "Sum":0, "State":"California", "ID":6003, "Year":2015}
-  ,{"Type":"Title V", "County":"Amador", "Sum":0, "State":"California", "ID":6005, "Year":2015}
-  ,{"Type":"Title V", "County":"Butte", "Sum":0, "State":"California", "ID":6007, "Year":2015}
-  ,{"Type":"Title V", "County":"Calaveras", "Sum":0, "State":"California", "ID":6009, "Year":2015}
-  ,{"Type":"Title V", "County":"Colusa", "Sum":0, "State":"California", "ID":6011, "Year":2015}
-  ,{"Type":"Title V", "County":"Contra Costa", "Sum":0, "State":"California", "ID":6013, "Year":2015}
-  ,{"Type":"Title V", "County":"Del Norte", "Sum":0, "State":"California", "ID":6015, "Year":2015}
-  ,{"Type":"Title V", "County":"El Dorado", "Sum":0, "State":"California", "ID":6017, "Year":2015}
-  ,{"Type":"Title V", "County":"Fresno", "Sum":0, "State":"California", "ID":6019, "Year":2015}
-  ,{"Type":"Title V", "County":"Glenn", "Sum":0, "State":"California", "ID":6021, "Year":2015}
-  ,{"Type":"Title V", "County":"Humboldt", "Sum":0, "State":"California", "ID":6023, "Year":2015}
-  ,{"Type":"Title V", "County":"Imperial", "Sum":0, "State":"California", "ID":6025, "Year":2015}
-  ,{"Type":"Title V", "County":"Inyo", "Sum":0, "State":"California", "ID":6027, "Year":2015}
-  ,{"Type":"Title V", "County":"Kern", "Sum":0, "State":"California", "ID":6029, "Year":2015}
-  ,{"Type":"Title V", "County":"Kings", "Sum":0, "State":"California", "ID":6031, "Year":2015}
-  ,{"Type":"Title V", "County":"Lake", "Sum":0, "State":"California", "ID":6033, "Year":2015}
-  ,{"Type":"Title V", "County":"Lassen", "Sum":0, "State":"California", "ID":6035, "Year":2015}
-  ,{"Type":"Title V", "County":"Los Angeles", "Sum":0, "State":"California", "ID":6037, "Year":2015}
-  ,{"Type":"Title V", "County":"Madera", "Sum":0, "State":"California", "ID":6039, "Year":2015}
-  ,{"Type":"Title V", "County":"Marin", "Sum":0, "State":"California", "ID":6041, "Year":2015}
-  ,{"Type":"Title V", "County":"Mariposa", "Sum":0, "State":"California", "ID":6043, "Year":2015}
-  ,{"Type":"Title V", "County":"Mendocino", "Sum":0, "State":"California", "ID":6045, "Year":2015}
-  ,{"Type":"Title V", "County":"Merced", "Sum":0, "State":"California", "ID":6047, "Year":2015}
-  ,{"Type":"Title V", "County":"Modoc", "Sum":0, "State":"California", "ID":6049, "Year":2015}
-  ,{"Type":"Title V", "County":"Mono", "Sum":0, "State":"California", "ID":6051, "Year":2015}
-  ,{"Type":"Title V", "County":"Monterey", "Sum":0, "State":"California", "ID":6053, "Year":2015}
-  ,{"Type":"Title V", "County":"Napa", "Sum":0, "State":"California", "ID":6055, "Year":2015}
-  ,{"Type":"Title V", "County":"Nevada", "Sum":0, "State":"California", "ID":6057, "Year":2015}
-  ,{"Type":"Title V", "County":"Orange", "Sum":0, "State":"California", "ID":6059, "Year":2015}
-  ,{"Type":"Title V", "County":"Placer", "Sum":0, "State":"California", "ID":6061, "Year":2015}
-  ,{"Type":"Title V", "County":"Plumas", "Sum":0, "State":"California", "ID":6063, "Year":2015}
-  ,{"Type":"Title V", "County":"Riverside", "Sum":1, "State":"California", "ID":6065, "Year":2015}
-  ,{"Type":"Title V", "County":"Sacramento", "Sum":0, "State":"California", "ID":6067, "Year":2015}
-  ,{"Type":"Title V", "County":"San Benito", "Sum":0, "State":"California", "ID":6069, "Year":2015}
-  ,{"Type":"Title V", "County":"San Bernardino", "Sum":0, "State":"California", "ID":6071, "Year":2015}
-  ,{"Type":"Title V", "County":"San Diego", "Sum":0, "State":"California", "ID":6073, "Year":2015}
-  ,{"Type":"Title V", "County":"San Francisco", "Sum":0, "State":"California", "ID":6075, "Year":2015}
-  ,{"Type":"Title V", "County":"San Joaquin", "Sum":0, "State":"California", "ID":6077, "Year":2015}
-  ,{"Type":"Title V", "County":"San Luis Obispo", "Sum":0, "State":"California", "ID":6079, "Year":2015}
-  ,{"Type":"Title V", "County":"San Mateo", "Sum":0, "State":"California", "ID":6081, "Year":2015}
-  ,{"Type":"Title V", "County":"Santa Barbara", "Sum":0, "State":"California", "ID":6083, "Year":2015}
-  ,{"Type":"Title V", "County":"Santa Clara", "Sum":0, "State":"California", "ID":6085, "Year":2015}
-  ,{"Type":"Title V", "County":"Santa Cruz", "Sum":0, "State":"California", "ID":6087, "Year":2015}
-  ,{"Type":"Title V", "County":"Shasta", "Sum":0, "State":"California", "ID":6089, "Year":2015}
-  ,{"Type":"Title V", "County":"Sierra", "Sum":0, "State":"California", "ID":6091, "Year":2015}
-  ,{"Type":"Title V", "County":"Siskiyou", "Sum":0, "State":"California", "ID":6093, "Year":2015}
-  ,{"Type":"Title V", "County":"Solano", "Sum":0, "State":"California", "ID":6095, "Year":2015}
-  ,{"Type":"Title V", "County":"Sonoma", "Sum":0, "State":"California", "ID":6097, "Year":2015}
-  ,{"Type":"Title V", "County":"Stanislaus", "Sum":0, "State":"California", "ID":6099, "Year":2015}
-  ,{"Type":"Title V", "County":"Sutter", "Sum":0, "State":"California", "ID":6101, "Year":2015}
-  ,{"Type":"Title V", "County":"Tehama", "Sum":0, "State":"California", "ID":6103, "Year":2015}
-  ,{"Type":"Title V", "County":"Trinity", "Sum":0, "State":"California", "ID":6105, "Year":2015}
-  ,{"Type":"Title V", "County":"Tulare", "Sum":0, "State":"California", "ID":6107, "Year":2015}
-  ,{"Type":"Title V", "County":"Tuolumne", "Sum":0, "State":"California", "ID":6109, "Year":2015}
-  ,{"Type":"Title V", "County":"Ventura", "Sum":0, "State":"California", "ID":6111, "Year":2015}
-  ,{"Type":"Title V", "County":"Yolo", "Sum":0, "State":"California", "ID":6113, "Year":2015}
-  ,{"Type":"Title V", "County":"Yuba", "Sum":0, "State":"California", "ID":6115, "Year":2015}
+  ,{"Type":"Title V", "County":"Alameda", "Sum":25, "State":"Califnornia", "ID":6001, "Year":2015}
+  ,{"Type":"Title V", "County":"Alpine", "Sum":0, "State":"Califnornia", "ID":6003, "Year":2015}
+  ,{"Type":"Title V", "County":"Amador", "Sum":15, "State":"Califnornia", "ID":6005, "Year":2015}
+  ,{"Type":"Title V", "County":"Butte", "Sum":0, "State":"Califnornia", "ID":6007, "Year":2015}
+  ,{"Type":"Title V", "County":"Calaveras", "Sum":0, "State":"Califnornia", "ID":6009, "Year":2015}
+  ,{"Type":"Title V", "County":"Colusa", "Sum":0, "State":"Califnornia", "ID":6011, "Year":2015}
+  ,{"Type":"Title V", "County":"Contra Costa", "Sum":43, "State":"Califnornia", "ID":6013, "Year":2015}
+  ,{"Type":"Title V", "County":"Del Norte", "Sum":0, "State":"Califnornia", "ID":6015, "Year":2015}
+  ,{"Type":"Title V", "County":"El Dorado", "Sum":0, "State":"Califnornia", "ID":6017, "Year":2015}
+  ,{"Type":"Title V", "County":"Fresno", "Sum":23, "State":"Califnornia", "ID":6019, "Year":2015}
+  ,{"Type":"Title V", "County":"Glenn", "Sum":0, "State":"Califnornia", "ID":6021, "Year":2015}
+  ,{"Type":"Title V", "County":"Humboldt", "Sum":2, "State":"Califnornia", "ID":6023, "Year":2015}
+  ,{"Type":"Title V", "County":"Imperial", "Sum":0, "State":"Califnornia", "ID":6025, "Year":2015}
+  ,{"Type":"Title V", "County":"Inyo", "Sum":0, "State":"Califnornia", "ID":6027, "Year":2015}
+  ,{"Type":"Title V", "County":"Kern", "Sum":11, "State":"Califnornia", "ID":6029, "Year":2015}
+  ,{"Type":"Title V", "County":"Kings", "Sum":0, "State":"Califnornia", "ID":6031, "Year":2015}
+  ,{"Type":"Title V", "County":"Lake", "Sum":1, "State":"Califnornia", "ID":6033, "Year":2015}
+  ,{"Type":"Title V", "County":"Lassen", "Sum":2, "State":"Califnornia", "ID":6035, "Year":2015}
+  ,{"Type":"Title V", "County":"Los Angeles", "Sum":234, "State":"Califnornia", "ID":6037, "Year":2015}
+  ,{"Type":"Title V", "County":"Madera", "Sum":0, "State":"Califnornia", "ID":6039, "Year":2015}
+  ,{"Type":"Title V", "County":"Marin", "Sum":3, "State":"Califnornia", "ID":6041, "Year":2015}
+  ,{"Type":"Title V", "County":"Mariposa", "Sum":0, "State":"Califnornia", "ID":6043, "Year":2015}
+  ,{"Type":"Title V", "County":"Mendocino", "Sum":42, "State":"Califnornia", "ID":6045, "Year":2015}
+  ,{"Type":"Title V", "County":"Merced", "Sum":0, "State":"Califnornia", "ID":6047, "Year":2015}
+  ,{"Type":"Title V", "County":"Modoc", "Sum":2, "State":"Califnornia", "ID":6049, "Year":2015}
+  ,{"Type":"Title V", "County":"Mono", "Sum":0, "State":"Califnornia", "ID":6051, "Year":2015}
+  ,{"Type":"Title V", "County":"Monterey", "Sum":0, "State":"Califnornia", "ID":6053, "Year":2015}
+  ,{"Type":"Title V", "County":"Napa", "Sum":1, "State":"Califnornia", "ID":6055, "Year":2015}
+  ,{"Type":"Title V", "County":"Nevada", "Sum":3, "State":"Califnornia", "ID":6057, "Year":2015}
+  ,{"Type":"Title V", "County":"Orange", "Sum":60, "State":"Califnornia", "ID":6059, "Year":2015}
+  ,{"Type":"Title V", "County":"Placer", "Sum":0, "State":"Califnornia", "ID":6061, "Year":2015}
+  ,{"Type":"Title V", "County":"Plumas", "Sum":1, "State":"Califnornia", "ID":6063, "Year":2015}
+  ,{"Type":"Title V", "County":"Riverside", "Sum":37, "State":"Califnornia", "ID":6065, "Year":2015}
+  ,{"Type":"Title V", "County":"Sacramento", "Sum":0, "State":"Califnornia", "ID":6067, "Year":2015}
+  ,{"Type":"Title V", "County":"San Benito", "Sum":59, "State":"Califnornia", "ID":6069, "Year":2015}
+  ,{"Type":"Title V", "County":"San Bernardino", "Sum":0, "State":"Califnornia", "ID":6071, "Year":2015}
+  ,{"Type":"Title V", "County":"San Diego", "Sum":0, "State":"Califnornia", "ID":6073, "Year":2015}
+  ,{"Type":"Title V", "County":"San Francisco", "Sum":7, "State":"Califnornia", "ID":6075, "Year":2015}
+  ,{"Type":"Title V", "County":"San Joaquin", "Sum":1, "State":"Califnornia", "ID":6077, "Year":2015}
+  ,{"Type":"Title V", "County":"San Luis Obispo", "Sum":2, "State":"Califnornia", "ID":6079, "Year":2015}
+  ,{"Type":"Title V", "County":"San Mateo", "Sum":5, "State":"Califnornia", "ID":6081, "Year":2015}
+  ,{"Type":"Title V", "County":"Santa Barbara", "Sum":0, "State":"Califnornia", "ID":6083, "Year":2015}
+  ,{"Type":"Title V", "County":"Santa Clara", "Sum":1, "State":"Califnornia", "ID":6085, "Year":2015}
+  ,{"Type":"Title V", "County":"Santa Cruz", "Sum":27, "State":"Califnornia", "ID":6087, "Year":2015}
+  ,{"Type":"Title V", "County":"Shasta", "Sum":0, "State":"Califnornia", "ID":6089, "Year":2015}
+  ,{"Type":"Title V", "County":"Sierra", "Sum":0, "State":"Califnornia", "ID":6091, "Year":2015}
+  ,{"Type":"Title V", "County":"Siskiyou", "Sum":0, "State":"Califnornia", "ID":6093, "Year":2015}
+  ,{"Type":"Title V", "County":"Solano", "Sum":11, "State":"Califnornia", "ID":6095, "Year":2015}
+  ,{"Type":"Title V", "County":"Sonoma", "Sum":3, "State":"Califnornia", "ID":6097, "Year":2015}
+  ,{"Type":"Title V", "County":"Stanislaus", "Sum":0, "State":"Califnornia", "ID":6099, "Year":2015}
+  ,{"Type":"Title V", "County":"Sutter", "Sum":0, "State":"Califnornia", "ID":6101, "Year":2015}
+  ,{"Type":"Title V", "County":"Tehama", "Sum":3, "State":"Califnornia", "ID":6103, "Year":2015}
+  ,{"Type":"Title V", "County":"Trinity", "Sum":2, "State":"Califnornia", "ID":6105, "Year":2015}
+  ,{"Type":"Title V", "County":"Tulare", "Sum":0, "State":"Califnornia", "ID":6107, "Year":2015}
+  ,{"Type":"Title V", "County":"Tuolumne", "Sum":0, "State":"Califnornia", "ID":6109, "Year":2015}
+  ,{"Type":"Title V", "County":"Ventura", "Sum":1, "State":"Califnornia", "ID":6111, "Year":2015}
+  ,{"Type":"Title V", "County":"Yolo", "Sum":1, "State":"Califnornia", "ID":6113, "Year":2015}
+  ,{"Type":"Title V", "County":"Yuba", "Sum":1, "State":"Califnornia", "ID":6115, "Year":2015}
 
 
   ,{"Type":"Title V", "County":"Appling", "Sum":22, "State":"Georgia", "ID":13001, "Year":2015}
