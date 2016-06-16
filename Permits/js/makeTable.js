@@ -15,8 +15,8 @@ function makeTable() {
 			// you can't have 2 table plots in one page (both will have the same id).
 			// I will leave it for now for simplicity. TODO: remove hard-coded id.
 	    .attr("id", "gene_table")
-		
-	    .style("visibility", "hidden"); // Hide table until style loads;
+
+	    //.style("visibility", "hidden"); // Hide table until style loads;
 
 	  // Set column names
 	  var colnames = Object.keys(data[0]);
@@ -67,6 +67,7 @@ function makeTable() {
         .on( 'mouseover', 'tr', function () { highlight(this, true); } )
         .on( 'mouseleave', 'tr', function () { highlight(this, false); } )
         .on('click', 'tr', function () { select(this); });
+			
 	  });
 	}
 

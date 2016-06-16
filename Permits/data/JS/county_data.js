@@ -155,6 +155,72 @@ var county_data = [
   ,{"Type":"Title V", "County":"Yuba", "Sum":1, "State":"Califnornia", "ID":6115, "Year":2015}
 
 
+  ,{"Type":"Title V", "County":"ADAMS", "Sum":1, "State":"Colorado", "ID":8001, "Year":2015}
+  ,{"Type":"Title V", "County":"ALAMOSA", "Sum":1, "State":"Colorado", "ID":8003, "Year":2015}
+  ,{"Type":"Title V", "County":"ARAPAHOE", "Sum":1, "State":"Colorado", "ID":8005, "Year":2015}
+  ,{"Type":"Title V", "County":"ARCHULETA", "Sum":0, "State":"Colorado", "ID":8007, "Year":2015}
+  ,{"Type":"Title V", "County":"BACA", "Sum":0, "State":"Colorado", "ID":8009, "Year":2015}
+  ,{"Type":"Title V", "County":"BENT", "Sum":0, "State":"Colorado", "ID":8011, "Year":2015}
+  ,{"Type":"Title V", "County":"BOULDER", "Sum":0, "State":"Colorado", "ID":8013, "Year":2015}
+  ,{"Type":"Title V", "County":"BROOMFIELD", "Sum":1, "State":"Colorado", "ID":8014, "Year":2015}
+  ,{"Type":"Title V", "County":"CHAFFEE", "Sum":0, "State":"Colorado", "ID":8015, "Year":2015}
+  ,{"Type":"Title V", "County":"CHEYENNE", "Sum":1, "State":"Colorado", "ID":8017, "Year":2015}
+  ,{"Type":"Title V", "County":"CLEAR CREEK", "Sum":1, "State":"Colorado", "ID":8019, "Year":2015}
+  ,{"Type":"Title V", "County":"CONEJOS", "Sum":0, "State":"Colorado", "ID":8021, "Year":2015}
+  ,{"Type":"Title V", "County":"COSTILLA", "Sum":0, "State":"Colorado", "ID":8023, "Year":2015}
+  ,{"Type":"Title V", "County":"CROWLEY", "Sum":2, "State":"Colorado", "ID":8025, "Year":2015}
+  ,{"Type":"Title V", "County":"CUSTER", "Sum":2, "State":"Colorado", "ID":8027, "Year":2015}
+  ,{"Type":"Title V", "County":"DELTA", "Sum":2, "State":"Colorado", "ID":8029, "Year":2015}
+  ,{"Type":"Title V", "County":"DENVER", "Sum":0, "State":"Colorado", "ID":8031, "Year":2015}
+  ,{"Type":"Title V", "County":"DOLORES", "Sum":0, "State":"Colorado", "ID":8033, "Year":2015}
+  ,{"Type":"Title V", "County":"DOUGLAS", "Sum":6, "State":"Colorado", "ID":8035, "Year":2015}
+  ,{"Type":"Title V", "County":"EAGLE", "Sum":0, "State":"Colorado", "ID":8037, "Year":2015}
+  ,{"Type":"Title V", "County":"EL PASO", "Sum":5, "State":"Colorado", "ID":8039, "Year":2015}
+  ,{"Type":"Title V", "County":"ELBERT", "Sum":4, "State":"Colorado", "ID":8041, "Year":2015}
+  ,{"Type":"Title V", "County":"FREMONT", "Sum":4, "State":"Colorado", "ID":8043, "Year":2015}
+  ,{"Type":"Title V", "County":"GARFIELD", "Sum":0, "State":"Colorado", "ID":8045, "Year":2015}
+  ,{"Type":"Title V", "County":"GILPIN", "Sum":2, "State":"Colorado", "ID":8047, "Year":2015}
+  ,{"Type":"Title V", "County":"GRAND", "Sum":0, "State":"Colorado", "ID":8049, "Year":2015}
+  ,{"Type":"Title V", "County":"GUNNISON", "Sum":24, "State":"Colorado", "ID":8051, "Year":2015}
+  ,{"Type":"Title V", "County":"HINSDALE", "Sum":4, "State":"Colorado", "ID":8053, "Year":2015}
+  ,{"Type":"Title V", "County":"HUERFANO", "Sum":2, "State":"Colorado", "ID":8055, "Year":2015}
+  ,{"Type":"Title V", "County":"JACKSON", "Sum":2, "State":"Colorado", "ID":8057, "Year":2015}
+  ,{"Type":"Title V", "County":"JEFFERSON", "Sum":0, "State":"Colorado", "ID":8059, "Year":2015}
+  ,{"Type":"Title V", "County":"KIOWA", "Sum":2, "State":"Colorado", "ID":8061, "Year":2015}
+  ,{"Type":"Title V", "County":"KIT CARSON", "Sum":0, "State":"Colorado", "ID":8063, "Year":2015}
+  ,{"Type":"Title V", "County":"LA PLATA", "Sum":0, "State":"Colorado", "ID":8065, "Year":2015}
+  ,{"Type":"Title V", "County":"LAKE", "Sum":5, "State":"Colorado", "ID":8067, "Year":2015}
+  ,{"Type":"Title V", "County":"LARIMER", "Sum":4, "State":"Colorado", "ID":8069, "Year":2015}
+  ,{"Type":"Title V", "County":"LAS ANIMAS", "Sum":0, "State":"Colorado", "ID":8071, "Year":2015}
+  ,{"Type":"Title V", "County":"LINCOLN", "Sum":3, "State":"Colorado", "ID":8073, "Year":2015}
+  ,{"Type":"Title V", "County":"LOGAN", "Sum":0, "State":"Colorado", "ID":8075, "Year":2015}
+  ,{"Type":"Title V", "County":"MESA", "Sum":3, "State":"Colorado", "ID":8077, "Year":2015}
+  ,{"Type":"Title V", "County":"MINERAL", "Sum":2, "State":"Colorado", "ID":8079, "Year":2015}
+  ,{"Type":"Title V", "County":"MOFFAT", "Sum":0, "State":"Colorado", "ID":8081, "Year":2015}
+  ,{"Type":"Title V", "County":"MONTEZUMA", "Sum":3, "State":"Colorado", "ID":8083, "Year":2015}
+  ,{"Type":"Title V", "County":"MONTROSE", "Sum":0, "State":"Colorado", "ID":8085, "Year":2015}
+  ,{"Type":"Title V", "County":"MORGAN", "Sum":10, "State":"Colorado", "ID":8087, "Year":2015}
+  ,{"Type":"Title V", "County":"OTERO", "Sum":3, "State":"Colorado", "ID":8089, "Year":2015}
+  ,{"Type":"Title V", "County":"OURAY", "Sum":0, "State":"Colorado", "ID":8091, "Year":2015}
+  ,{"Type":"Title V", "County":"PARK", "Sum":8, "State":"Colorado", "ID":8093, "Year":2015}
+  ,{"Type":"Title V", "County":"PHILLIPS", "Sum":0, "State":"Colorado", "ID":8095, "Year":2015}
+  ,{"Type":"Title V", "County":"PITKIN", "Sum":7, "State":"Colorado", "ID":8097, "Year":2015}
+  ,{"Type":"Title V", "County":"PROWERS", "Sum":6, "State":"Colorado", "ID":8099, "Year":2015}
+  ,{"Type":"Title V", "County":"PUEBLO", "Sum":5, "State":"Colorado", "ID":8101, "Year":2015}
+  ,{"Type":"Title V", "County":"RIO BLANCO", "Sum":3, "State":"Colorado", "ID":8103, "Year":2015}
+  ,{"Type":"Title V", "County":"RIO GRANDE", "Sum":3, "State":"Colorado", "ID":8105, "Year":2015}
+  ,{"Type":"Title V", "County":"ROUTT", "Sum":0, "State":"Colorado", "ID":8107, "Year":2015}
+  ,{"Type":"Title V", "County":"SAGUACHE", "Sum":7, "State":"Colorado", "ID":8109, "Year":2015}
+  ,{"Type":"Title V", "County":"SAN JUAN", "Sum":6, "State":"Colorado", "ID":8111, "Year":2015}
+  ,{"Type":"Title V", "County":"SAN MIGUEL", "Sum":6, "State":"Colorado", "ID":8113, "Year":2015}
+  ,{"Type":"Title V", "County":"SEDGWICK", "Sum":4, "State":"Colorado", "ID":8115, "Year":2015}
+  ,{"Type":"Title V", "County":"SUMMIT", "Sum":5, "State":"Colorado", "ID":8117, "Year":2015}
+  ,{"Type":"Title V", "County":"TELLER", "Sum":0, "State":"Colorado", "ID":8119, "Year":2015}
+  ,{"Type":"Title V", "County":"WASHINGTON", "Sum":4, "State":"Colorado", "ID":8121, "Year":2015}
+  ,{"Type":"Title V", "County":"WELD", "Sum":3, "State":"Colorado", "ID":8123, "Year":2015}
+  ,{"Type":"Title V", "County":"YUMA", "Sum":2, "State":"Colorado", "ID":8125, "Year":2015}
+
+
   ,{"Type":"Title V", "County":"Appling", "Sum":22, "State":"Georgia", "ID":13001, "Year":2015}
   ,{"Type":"Title V", "County":"Atkinson", "Sum":0, "State":"Georgia", "ID":13003, "Year":2015}
   ,{"Type":"Title V", "County":"Bacon", "Sum":13, "State":"Georgia", "ID":13005, "Year":2015}

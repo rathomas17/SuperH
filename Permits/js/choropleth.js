@@ -88,12 +88,15 @@ function drawMap() {
 				} else {
 					tooltip.text(d.properties.name + "County : NO DATA");
 				}
-				d3.select(this).style('stroke-width','4px');
+				d3.select(this).style('stroke-width','1px');
 				d3.select(this).style('stroke','red');
 				tooltip.style("visibility", "visible");
 			})
 			.on("mousemove", function(){
 				tooltip.style("top", (event.pageY-10)+"px").style("left",(event.pageX+10)+"px");})
+
+
+
 			.on("mouseout", function(){
 				d3.select(this).style('stroke-width','.25px');
 				d3.select(this).style('stroke','grey');
@@ -102,6 +105,40 @@ function drawMap() {
 
 
 }
+
+
+
+/**** Helper functions to highlight and select data **************/
+function highlight(row, on_off) {
+	if(typeof on_off === 'undefined'){
+		// if on_off is not provided, just toggle class.
+		on_off = !d3.select(row).classed('highlight');
+	}
+	// Set the row's class as highlighted if on==true,
+	// Otherwise remove the 'highlighted' class attribute.
+	// In DataTables, this is handled automatically for us.
+	d3.select(row).classed('highlight', on_off);
+
+	// Fire a highlight event, with the data and highlight status.
+	dispatcher.highlight(table.rows(row).data()[0], on_off);
+}
+function select(row, on_off) {
+	// Similar to highlight function.
+	if(typeof on_off === 'undefined'){
+		on_off = !d3.select(row).classed('selected');
+	}
+
+	d3.select(row).classed('selected', on_off);
+
+	// Fire a select event, with the data and selected status.
+	dispatcher.select(table.rows(row).data()[0], on_off);
+}
+
+
+
+
+
+
 
 
 function quantize(d) {

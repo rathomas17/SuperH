@@ -18,7 +18,7 @@ con = mdb.connect(read_default_file=u'./genUser.cnf', db=u'State_Permits', chars
 cur_fetch = con.cursor(mdb.cursors.DictCursor)
 
 
-sel = u'''select fips, count, name from california_counties'''
+sel = u'''select fips, count, name from colorado_counties'''
 
 
 
@@ -44,7 +44,7 @@ for row in rows:
 
    print fips, count
 
-   f = open('new_california.txt','a')
+   f = open('new_colorado.txt','a')
    f.write(',{"Type":"Title V", "County":"')
    f.write(name)
    f.write('", "Sum":')

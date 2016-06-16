@@ -5,7 +5,7 @@ var state_data = [
   ,{"State ID":"AZ", "State":"Arizona", "Permits":6}
   ,{"State ID":"AR", "State":"Arkansas", "Permits":107}
   ,{"State ID":"CA", "State":"California", "Permits":629}
-  ,{"State ID":"CO", "State":"Colorado", "Permits":0}
+  ,{"State ID":"CO", "State":"Colorado", "Permits":169}
   ,{"State ID":"CT", "State":"Connecticut", "Permits":0}
   ,{"State ID":"DE", "State":"Delaware", "Permits":0}
   ,{"State ID":"FL", "State":"Florida", "Permits":0}

@@ -155,6 +155,72 @@
   ,{"cpc":"A", "fips":"06115", "sum":10, "normalized":1, "year":2015}
 
 
+  ,{"cpc":"A", "fips":"08001", "sum":100, "normalized":1, "year":2015}
+  ,{"cpc":"A", "fips":"08003", "sum":100, "normalized":1, "year":2015}
+  ,{"cpc":"A", "fips":"08005", "sum":100, "normalized":1, "year":2015}
+  ,{"cpc":"A", "fips":"08007", "sum":0, "normalized":0, "year":2015}
+  ,{"cpc":"A", "fips":"08009", "sum":0, "normalized":0, "year":2015}
+  ,{"cpc":"A", "fips":"08011", "sum":0, "normalized":0, "year":2015}
+  ,{"cpc":"A", "fips":"08013", "sum":0, "normalized":0, "year":2015}
+  ,{"cpc":"A", "fips":"08014", "sum":10, "normalized":1, "year":2015}
+  ,{"cpc":"A", "fips":"08015", "sum":0, "normalized":0, "year":2015}
+  ,{"cpc":"A", "fips":"08017", "sum":100, "normalized":1, "year":2015}
+  ,{"cpc":"A", "fips":"08019", "sum":100, "normalized":1, "year":2015}
+  ,{"cpc":"A", "fips":"08021", "sum":0, "normalized":0, "year":2015}
+  ,{"cpc":"A", "fips":"08023", "sum":0, "normalized":0, "year":2015}
+  ,{"cpc":"A", "fips":"08025", "sum":200, "normalized":2, "year":2015}
+  ,{"cpc":"A", "fips":"08027", "sum":200, "normalized":2, "year":2015}
+  ,{"cpc":"A", "fips":"08029", "sum":200, "normalized":2, "year":2015}
+  ,{"cpc":"A", "fips":"08031", "sum":0, "normalized":0, "year":2015}
+  ,{"cpc":"A", "fips":"08033", "sum":0, "normalized":0, "year":2015}
+  ,{"cpc":"A", "fips":"08035", "sum":600, "normalized":6, "year":2015}
+  ,{"cpc":"A", "fips":"08037", "sum":0, "normalized":0, "year":2015}
+  ,{"cpc":"A", "fips":"08039", "sum":500, "normalized":5, "year":2015}
+  ,{"cpc":"A", "fips":"08041", "sum":400, "normalized":4, "year":2015}
+  ,{"cpc":"A", "fips":"08043", "sum":400, "normalized":4, "year":2015}
+  ,{"cpc":"A", "fips":"08045", "sum":0, "normalized":0, "year":2015}
+  ,{"cpc":"A", "fips":"08047", "sum":200, "normalized":2, "year":2015}
+  ,{"cpc":"A", "fips":"08049", "sum":0, "normalized":0, "year":2015}
+  ,{"cpc":"A", "fips":"08051", "sum":2400, "normalized":24, "year":2015}
+  ,{"cpc":"A", "fips":"08053", "sum":400, "normalized":4, "year":2015}
+  ,{"cpc":"A", "fips":"08055", "sum":200, "normalized":2, "year":2015}
+  ,{"cpc":"A", "fips":"08057", "sum":200, "normalized":2, "year":2015}
+  ,{"cpc":"A", "fips":"08059", "sum":0, "normalized":0, "year":2015}
+  ,{"cpc":"A", "fips":"08061", "sum":200, "normalized":2, "year":2015}
+  ,{"cpc":"A", "fips":"08063", "sum":0, "normalized":0, "year":2015}
+  ,{"cpc":"A", "fips":"08065", "sum":0, "normalized":0, "year":2015}
+  ,{"cpc":"A", "fips":"08067", "sum":500, "normalized":5, "year":2015}
+  ,{"cpc":"A", "fips":"08069", "sum":400, "normalized":4, "year":2015}
+  ,{"cpc":"A", "fips":"08071", "sum":0, "normalized":0, "year":2015}
+  ,{"cpc":"A", "fips":"08073", "sum":300, "normalized":3, "year":2015}
+  ,{"cpc":"A", "fips":"08075", "sum":0, "normalized":0, "year":2015}
+  ,{"cpc":"A", "fips":"08077", "sum":300, "normalized":3, "year":2015}
+  ,{"cpc":"A", "fips":"08079", "sum":200, "normalized":2, "year":2015}
+  ,{"cpc":"A", "fips":"08081", "sum":0, "normalized":0, "year":2015}
+  ,{"cpc":"A", "fips":"08083", "sum":300, "normalized":3, "year":2015}
+  ,{"cpc":"A", "fips":"08085", "sum":0, "normalized":0, "year":2015}
+  ,{"cpc":"A", "fips":"08087", "sum":1000, "normalized":10, "year":2015}
+  ,{"cpc":"A", "fips":"08089", "sum":300, "normalized":3, "year":2015}
+  ,{"cpc":"A", "fips":"08091", "sum":0, "normalized":0, "year":2015}
+  ,{"cpc":"A", "fips":"08093", "sum":800, "normalized":8, "year":2015}
+  ,{"cpc":"A", "fips":"08095", "sum":0, "normalized":0, "year":2015}
+  ,{"cpc":"A", "fips":"08097", "sum":700, "normalized":7, "year":2015}
+  ,{"cpc":"A", "fips":"08099", "sum":600, "normalized":6, "year":2015}
+  ,{"cpc":"A", "fips":"08101", "sum":500, "normalized":5, "year":2015}
+  ,{"cpc":"A", "fips":"08103", "sum":300, "normalized":3, "year":2015}
+  ,{"cpc":"A", "fips":"08105", "sum":300, "normalized":3, "year":2015}
+  ,{"cpc":"A", "fips":"08107", "sum":0, "normalized":0, "year":2015}
+  ,{"cpc":"A", "fips":"08109", "sum":700, "normalized":7, "year":2015}
+  ,{"cpc":"A", "fips":"08111", "sum":600, "normalized":6, "year":2015}
+  ,{"cpc":"A", "fips":"08113", "sum":600, "normalized":6, "year":2015}
+  ,{"cpc":"A", "fips":"08115", "sum":400, "normalized":4, "year":2015}
+  ,{"cpc":"A", "fips":"08117", "sum":500, "normalized":5, "year":2015}
+  ,{"cpc":"A", "fips":"08119", "sum":0, "normalized":0, "year":2015}
+  ,{"cpc":"A", "fips":"08121", "sum":400, "normalized":4, "year":2015}
+  ,{"cpc":"A", "fips":"08123", "sum":300, "normalized":3, "year":2015}
+  ,{"cpc":"A", "fips":"08125", "sum":200, "normalized":2, "year":2015}
+
+
   ,{"cpc":"A", "fips":"13001", "sum":220, "normalized":22, "year":2015}
   ,{"cpc":"A", "fips":"13003", "sum":0, "normalized":0, "year":2015}
   ,{"cpc":"A", "fips":"13005", "sum":130, "normalized":13, "year":2015}
