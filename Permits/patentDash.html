@@ -43,12 +43,12 @@
   				<a id="whiteText" class= "blacklink" href="http://www.superHindex.com/">superH</a>
       	<code>|</code>
   		  <a id="whiteText" class = "blacklink" onclick="patchNotes()">patch notes</a>
-      	<code>|</code> <div> Version 1.4.0</div>
+      	<code>|</code> <div> Version 1.8.0</div>
   			</span>
       </h1>
                 <script>
                 function patchNotes() {
-                    alert("Version 1.4.0: Added zooom!");
+                    alert("Version 1.8.0: State tables and County map now linked!");
 
                 }
                 </script>
@@ -122,7 +122,7 @@
   					</div>
             <div class="col-md-6">
             <div id="whiteText" align="left">Current year: <span class="currentYear">ThisYear</span></div>
-            <div id="whiteText">Current Permit Type: <span class="currentCPC">ThisCPC</span></div>
+            <div id="whiteText">Current State: <span class="currentState">ThisState</span></div>
             </div>
             <div id="whiteText" class="graphInfo">Darker counties indicate more permits per capita</div>
 
@@ -132,6 +132,7 @@
   			</div>
         <!--END OF MAP-->
   		</div>
+
 
   </div>
 
@@ -185,7 +186,7 @@
 <!--OLD CODE-->
 
 
-<!--old cpc table
+<!--old State table
 <div id = "chart"></div>
 <div class="row">
   <div id = "lineColumn" class="col-md-12">
@@ -196,7 +197,7 @@
   </div>
 </div>
 
-end of old cpc table-->
+end of old State table-->
 
 
 <!--state_plot.on('highlight', function(data, on_off){
@@ -215,10 +216,10 @@ state_plot.on('select', function(data, on_off){
 });-->
 
 
-<!--cpc table
+<!--State table
 <div class="row">
 <div id = "lineColumn" class="col-md-12">
  <div id = "chart"></div>
 </div>
 </div>
-end of cpc table-->
+end of State table-->

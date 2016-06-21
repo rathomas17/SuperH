@@ -67,7 +67,7 @@ function makeStateTable() {
 				"columnDefs": [
 				            {
 				                "targets": [0],
-				                "visible": false
+				                //"visible": false
 
 				            }
 				        ],
@@ -81,6 +81,19 @@ function makeStateTable() {
       $('#state_table tbody')
         .on( 'mouseover', 'tr', function () { highlight(this, true); } )
         .on( 'mouseleave', 'tr', function () { highlight(this, false); } )
+				//.on( 'click', 'tr', function() {stateSelect(this, true);})
+
+
+				.on( 'click', 'tr', function () {
+					var s = $(this).children('td:eq(0)').text();
+  //  alert( 'Row index: '+table.row( this ).index() );
+
+
+				currentState = s;
+				
+				d3.select("#chosvg").remove();
+				drawMap();
+				} );
         //.on('click', 'tr', function () { select(this); });
 
 
@@ -88,6 +101,16 @@ function makeStateTable() {
 	  });
 	}
 
+/*
+	function stateSelect(x){
+		var rowData = table.row( this ).data();
+	alert('You have selected: ' + String(x));
+	alert('You have selected: ' + String(rowData));
+	alert( 'Row index: '+table.row( this ).index() );
+	console.log(rowData);
+	console.log(td);
+	}
+*/
 	/**** Helper functions to highlight and select data **************/
 	function highlight(row, on_off) {
 		if(typeof on_off === 'undefined'){

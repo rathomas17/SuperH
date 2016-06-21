@@ -131,6 +131,10 @@ svg.selectAll('text')
 // Add the onclick callback to the button
 d3.select("#sort").on("click", sortBars);
 d3.select("#reset").on("click", reset);
+d3.select("#rect").on("click", stateSelect);
+function stateSelect(){
+alert("call the do something function on option 2");
+}
 function randomSort() {
 
 

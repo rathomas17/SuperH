@@ -17,7 +17,7 @@ var states;
 function drawMap() {
 
 	console.log("here, data is: ");
-	console.log(data["A"]["2015"]["22079"]);
+	console.log(data["ALL"]["2015"]["22079"]);
 
 
 	var projection = d3.geo.albersUsa()
@@ -66,7 +66,7 @@ function drawMap() {
 	counties = svg.append("g");
 	d3.json("data/JSON/us-counties.json", function(json) {
 		console.log("data is: ");
-  		var x = data["A"][2015][22079];
+  		var x = data["ALL"][2015][22079];
   		console.log("x is: ")
   		console.log(x);
 		counties
@@ -82,8 +82,8 @@ function drawMap() {
 			.on("click", clicked)
 			//end added for click
 			.on("mouseover", function(d){
-				if(data[currentCPC][currentYear][d.id]!=null){
-					val = data[currentCPC][currentYear][d.id]['normalized'];
+				if(data[currentState][currentYear][d.id]!=null){
+					val = data[currentState][currentYear][d.id]['normalized'];
 					tooltip.text(d.properties.name + " County: " + val + " Permits");
 				} else {
 					tooltip.text(d.properties.name + "County : NO DATA");
@@ -193,7 +193,7 @@ function clicked(d) {
 
 function getCountyNorm1(county){
 	try{
-		return data[currentCPC][currentYear][county]['sum'];
+		return data[currentState][currentYear][county]['sum'];
 	}
 	catch(e){
 		return 0;

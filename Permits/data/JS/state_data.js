@@ -50,6 +50,6 @@ var state_data = [
   ,{"State ID":"WV", "State":"West Virginia", "Permits":0}
   ,{"State ID":"WI", "State":"Wisconsin", "Permits":8855}
   ,{"State ID":"WY", "State":"Wyoming", "Permits":0}
-  ,{"State ID":"AS", "State":"All States", "Permits":64673}
+  ,{"State ID":"ALL", "State":"All States", "Permits":64673}
 
 ];
